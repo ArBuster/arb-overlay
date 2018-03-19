@@ -41,6 +41,8 @@ S="${WORKDIR}/${MY_P}"
 
 src_prepare() {
 	mkdir "${WORKDIR}/build"
+
+	cp "${FILESDIR}/oss.init" "${S}/setup/Linux/oss/etc/S89oss"
 	
 	if ! use ogg ; then
 		sed -e "s;OGG_SUPPORT=YES;OGG_SUPPORT=NO;g" \
