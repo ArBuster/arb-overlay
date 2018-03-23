@@ -19,11 +19,11 @@ KEYWORDS="~amd64"
 DEPRECATED_CARDS="allegro als3xx als4k digi32 maestro neomagic s3vibes vortex"
 
 CARDS="ali5455 atiaudio audigyls audiocs audioloop audiopci cmi878x cmpci cs4281 cs461x
-	digi96 emu10k1x envy24 envy24ht fmedia geode ich imux madi midiloop
+	digi96 emu10k1x envy24 envy24ht fmedia geode hdaudio ich imux madi midiloop
 	midimix sblive sbpci sbxfi solo trident usb userdev via823x via97 ymf7xx
 	${DEPRECATED_CARDS}"
 
-IUSE="+alsa +gtk midi ogg vmix_fixedpoint +oss_cards_hdaudio"
+IUSE="+alsa +gtk midi ogg vmix_fixedpoint"
 
 for card in ${CARDS} ; do
 	IUSE+=" oss_cards_${card}"

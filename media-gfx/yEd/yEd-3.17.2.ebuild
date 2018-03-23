@@ -7,25 +7,19 @@ inherit eutils java-pkg-2
 
 DESCRIPTION="yEd Graph Editor - High-quality diagrams made easy"
 HOMEPAGE="http://www.yworks.com/en/products_yed_about.html"
-SRC_URI="yEd-${PV}.zip"
-DOWNLOAD_URL="http://www.yworks.com/en/products_download.php?file=${SRC_URI}"
+SRC_URI="https://www.yworks.com/resources/yed/demo/${P}.zip"
 MY_JAR="${P}.jar"
 LICENSE="yEd"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
-RESTRICT="fetch"
+RESTRICT="mirror"
 
 RDEPEND=">=virtual/jre-1.8"
 DEPEND="
 	app-arch/unzip
-	${RDEPEND}"
-
-pkg_nofetch() {
-	einfo "Please download the ${SRC_URI} from"
-	einfo "${DOWNLOAD_URL}"
-	einfo "and place it in ${DISTDIR}"
-}
+	${RDEPEND}
+	"
 
 src_unpack() {
 	unzip "${DISTDIR}/${A}" -d "${S}"
