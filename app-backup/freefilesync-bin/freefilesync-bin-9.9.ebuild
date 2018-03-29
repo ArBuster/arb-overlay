@@ -15,7 +15,7 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 
-RDEPEND=">=x11-libs/wxGTK-3.0.3[X]
+RDEPEND=">=x11-libs/wxGTK-3.0.3:3.0[X]
     dev-libs/boost
     "
 
