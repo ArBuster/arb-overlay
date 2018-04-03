@@ -69,10 +69,10 @@ src_install() {
 
 	dodoc -r acl
 
-	systemd_newunit "${FILESDIR}/${PN}-local_at.service" "${PN}-local.service"
-	systemd_newunit "${FILESDIR}/${PN}-server_at.service" "${PN}-server.service"
-	systemd_newunit "${FILESDIR}/${PN}-redir_at.service" "${PN}-redir.service"
-	systemd_newunit "${FILESDIR}/${PN}-tunnel_at.service" "${PN}-tunnel.service"
+	systemd_newunit "${FILESDIR}/${PN}-local_at.service" "${PN}-local@.service"
+	systemd_newunit "${FILESDIR}/${PN}-server_at.service" "${PN}-server@.service"
+	systemd_newunit "${FILESDIR}/${PN}-redir_at.service" "${PN}-redir@.service"
+	systemd_newunit "${FILESDIR}/${PN}-tunnel_at.service" "${PN}-tunnel@.service"
 }
 
 pkg_setup() {

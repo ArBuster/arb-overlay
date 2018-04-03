@@ -18,7 +18,7 @@ DEPEND=">=dev-qt/qtcore-5.5
 	media-gfx/qrencode
 	media-gfx/zbar
 	dev-libs/libappindicator
-	net-proxy/libqtshadowsocks:2
+	net-libs/libqtshadowsocks:2
 	"
 RDEPEND="${DEPEND}"
 
