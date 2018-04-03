@@ -20,17 +20,19 @@ ZSH_DEST="/usr/share/${PN}"
 ZSH_TEMPLATE="templates/zshrc.zsh-template"
 
 DOC_CONTENTS="In order to use ${CATEGORY}/${PN} add to your ~/.zshrc \n
-source '${ZSH_DEST}/${ZSH_TEMPLATE}' \n
+source /etc/oh-my-zsh.conf \n
 or copy a modification of that file to your ~/.zshrc \n
 If you just want to try, enter the above command in your zsh."
 
 src_prepare() {
-    sed -i 's:$HOME/.oh-my-zsh:'${ZSH_DEST}':g' "${S}/${ZSH_TEMPLATE}"
+    sed -i 's:$HOME/.oh-my-zsh:'${ZSH_DEST}':g' ${ZSH_TEMPLATE}
 }
 
 src_install() {
 	insinto "${ZSH_DEST}"
 	doins -r *
+	insinto /etc
+	newins ${ZSH_TEMPLATE} "oh-my-zsh.conf"
 }
 
 pkg_postinst() {
