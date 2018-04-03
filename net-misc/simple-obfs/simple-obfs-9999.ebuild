@@ -14,7 +14,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 AUTOTOOLS_AUTORECONF=${S}
-BUILD_DIR=${WORKDIR}/${P}
+BUILD_DIR=${S}
 
 src_prepare() {
     autotools-utils_src_prepare 
