@@ -116,6 +116,10 @@ src_install() {
 	done
 
 	dosym /usr/${libdir}/oss/include /usr/include/oss
+	
+    insinto "/lib/systemd/system-sleep"
+	doins "${FILESDIR}"/50osssound.sh
+	fperms 744 "/lib/systemd/system-sleep/50osssound.sh"
 }
 
 pkg_postinst() {
@@ -123,10 +127,12 @@ pkg_postinst() {
 	linux-mod_pkg_postinst
 
 	ewarn "In order to use OSSv4 you must run 'soundon' at root privilege"
+	ewarn "or sh /usr/lib/oss/build/install.sh"
 	ewarn "open-rc:  rc-update add oss default"
 	ewarn "systemd:  systemctl enable oss"
 	ewarn "In case of upgrading from a previous build or reinstalling current one"
 	ewarn "You might need to remove /lib/modules/${KV_FULL}/kernel/oss"
+	ewarn "Configure files are located at /usr/lib/oss/conf"
 }
 
 pkg_postrm() {
