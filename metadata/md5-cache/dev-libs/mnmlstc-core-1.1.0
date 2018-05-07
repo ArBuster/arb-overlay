@@ -1,0 +1,10 @@
+DEFINED_PHASES=install
+DESCRIPTION=C++14 (and beyond) library features implemented in C++11
+EAPI=6
+HOMEPAGE=https://github.com/mnmlstc/core
+KEYWORDS=~amd64
+LICENSE=Apache-2.0
+RESTRICT=mirror
+SLOT=0
+SRC_URI=https://github.com/mnmlstc/core/releases/download/v1.1.0/core-1.1.0.tar.gz -> mnmlstc-core-1.1.0.tar.gz
+_md5_=61f1a51aa548ccf040ec6892a314b72e
