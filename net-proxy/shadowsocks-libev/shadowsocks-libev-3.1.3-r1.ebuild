@@ -73,6 +73,7 @@ src_install() {
 	systemd_newunit "${FILESDIR}/${PN}-server_at.service" "${PN}-server@.service"
 	systemd_newunit "${FILESDIR}/${PN}-redir_at.service" "${PN}-redir@.service"
 	systemd_newunit "${FILESDIR}/${PN}-tunnel_at.service" "${PN}-tunnel@.service"
+	systemd_newunit "${FILESDIR}/${PN}-manager_at.service" "${PN}-manager@.service"
 }
 
 pkg_setup() {
