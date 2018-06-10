@@ -42,9 +42,9 @@ src_configure(){
         "-DLIBMONGOC_INCLUDE_DIRS=${INCLUDE_DIR}"
         )
         
-    if use static-libs ; then
-        mycmakeargs+=("-DBUILD_SHARED_LIBS=OFF")
-    else
+    if ! use static-libs ; then
+    #    mycmakeargs+=("-DBUILD_SHARED_LIBS=OFF")
+    #else
         sed -i '180,183d' "${S}/src/bsoncxx/CMakeLists.txt"
         sed -i '191,194d' "${S}/src/mongocxx/CMakeLists.txt"
     fi
