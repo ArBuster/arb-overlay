@@ -20,3 +20,4 @@
 =media-plugins/deadbeef-vu-meter-99999999
 =media-plugins/deadbeef-waveform-seekbar-9999
 =media-sound/deadbeef-9999
+=net-misc/youtube-dl-99999999
