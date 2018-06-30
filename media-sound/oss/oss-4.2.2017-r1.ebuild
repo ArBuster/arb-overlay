@@ -40,6 +40,8 @@ RDEPEND="${DEPEND}"
 S="${WORKDIR}/${MY_P}"
 
 src_prepare() {
+	default
+	
 	mkdir "${WORKDIR}/build"
 
 	cp "${FILESDIR}/oss.init" "${S}/setup/Linux/oss/etc/S89oss"
@@ -72,7 +74,8 @@ src_prepare() {
 		-i "${S}/setup/Linux/oss/build/install.sh"
 
 	epatch \
-		"${FILESDIR}/${PF}-linux-4.11.patch"
+        "${FILESDIR}/${PF}-linux-4.11.patch" \
+		"${FILESDIR}/${PF}-linux-4.14.patch"
 
 	eapply_user
 }
@@ -117,7 +120,7 @@ src_install() {
 
 	dosym /usr/${libdir}/oss/include /usr/include/oss
 	
-    insinto "/lib/systemd/system-sleep"
+	insinto "/lib/systemd/system-sleep"
 	doins "${FILESDIR}"/50osssound.sh
 	fperms 744 "/lib/systemd/system-sleep/50osssound.sh"
 }
