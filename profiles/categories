@@ -2,6 +2,7 @@ app-backup
 app-editors
 app-misc
 app-shells
+dev-db
 dev-libs
 media-gfx
 media-plugins
@@ -10,3 +11,5 @@ net-libs
 net-misc
 net-proxy
 net-wireless
+sys-firmware
+www-client

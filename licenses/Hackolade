@@ -1,0 +1,210 @@
+Hackolade End User License Agreement
+Version 1.0.5, June 2017
+
+This Agreement applies to Hackolade for Evaluation, Community, Personal, and Professional editions, as well as the experimental VR viewer.  Other Hackolade products are covered by other agreements, as specified on http://hackolade.com/eulas.html
+
+A patent application has been filed and is pending for the "METHOD AND SYSTEM TO GRAPHICALLY MODEL SCHEMAS FOR NOSQL DOCUMENT DATABASES AND REST API`S".
+
+IMPORTANT:  THE INDIVIDUAL INSTALLING OR USING THIS SOFTWARE REPRESENTS THAT HE OR SHE HAS AUTHORITY TO ENTER INTO THIS AGREEMENT WITH HACKOLADE ON BEHALF OF THE LICENSEE, THAT HE OR SHE HAS READ THE TERMS AND CONDITIONS SET OUT HEREIN AND THAT THE LICENSEE ACCEPTS AND AGREES TO BE BOUND BY THIS AGREEMENT.  IF THE LICENSEE DOES NOT AGREE WITH THE TERMS AND CONDITIONS, THE LICENSEE MUST NOT USE OR PERMIT THE USE OF THE PRODUCT.
+
+1. Definitions
+Hackolade means Hackolade, a brand and product of IntegrIT SA/NV (BE 0477.231.387) located at Zwaluwenlaan 16, 1650 Beersel, Belgium.
+
+Authorized Machine means a single installation of a copy of the Product on a single physical computer.
+
+Authorized Use means the defined number of copies or instances of the Product that may be used by Licensee, and where applicable, limited to the number of Authorized Machines, as designated in the Quote/Receipt/Invoice issued by Hackolade.
+
+Authorized User means a person or user account who is licensed to use the Product, regardless of whether that person is an employee, contractor, subcontractor, vendor, partner or customer of the Licensee.
+
+Commencement Date means the date on which Licensee first installs Product for the first time.
+
+Desktop Version means a version of the Product that works outside the browser, as a standalone application.
+
+License means the right to use the Product as defined by Authorized Use.
+
+Licensee means the individual or entity (inclusive of affiliates and subsidiaries) that has licensed the Product under the terms and conditions of this Agreement.
+
+Maintenance Start Date means the beginning date of the Software Maintenance period, as designated in the Quote/Receipt/Invoice issued by Hackolade, or the Invoice date if no beginning date is specified.
+
+Product means the Hackolade product defined in the Quote/Receipt/Invoice delivered by Hackolade to Licensee, including any documentation and updates provided under the terms of this Agreement in accordance with Clause 5.
+
+Protected Code means source code contained within the Product that is protected by Hackolade against access.
+
+2. License Fee
+A one-time fee paid by Licensee to Hackolade, as designated by Product, in consideration for the Authorized Use of the Product. License fee is payable upon acceptance of the terms and conditions set out herein. License fee is nonrefundable after 60 days from the date payment is received by Hackolade.
+
+3. Grant of License
+Subject to the terms of this Agreement, including limitations defined by the License, Hackolade hereby grants to Licensee, and Licensee accepts from Hackolade, a perpetual, irrevocable (except pursuant to Clause 12 below), fully paid, worldwide, non-exclusive, non-transferable (except pursuant to Clause 18 below), non-sublicensable (except to Licensee�s related entities) License to use the Product as defined by Authorized Use.
+
+4. No Warranty
+Except as described in this Agreement and save as provided in Clauses 13, 14 and 16 below, the Product is provided on an �as is� and "as available" basis without warranty, express or implied, of any kind or nature, including, but not limited to, any warranties of performance or merchantability or fitness for a particular purpose, including without limitation that Hackolade does not warrant that the Product will be error-free, complete, or correct. Hackolade provides evaluation copies of the Product so that customers can assess the Product.
+
+5. Hackolade�s Obligations
+Upon receipt of Licensee Fee from Licensee, Hackolade will (a) supply the Licensee with the Product via electronic download; and (b) provide Software Maintenance as defined in Clause 6 below, if the Licensee has purchased the Software Maintenance option at the time of purchase of the Product. Hackolade will also deliver via email an activation key for the Product.
+
+6. Software Maintenance
+6.1. For Desktop Versions
+Software Maintenance includes Hackolade's provisioning to Licensee Product minor-version updates (1.x but not 2.0 and later) and/or enhancements made generally available to customers from time to time.  If the option was purchased with the Product, Software Maintenance also includes online technical support via online forums only (no email, instant messenger or phone support) to one Licensee-designated technical contact for the sole purpose of addressing technical issues relating to the use of the Product, for a period of twelve (12) months from the Maintenance Start Date. No additional support will be provided after that.
+6.2 For Cardboard VR
+The Hackolade VR viewer is an experimental application, provided free of charge, without any maintenance or support.
+
+7. Licensee Obligations
+The Licensee must at all times: (a) ensure that only an Authorized User may use the Product and only for Authorized Use in accordance with the terms and conditions of this Agreement; (b) promptly advise Hackolade, including in writing, if the Licensee becomes aware of any unauthorized use or distribution of the Licensee's License Information (Name and Key) by any person.
+
+8. Unauthorized Use or Distribution
+Licensee may not, whether through deliberate or negligent act or act of omission, distribute or cause the distribution of the Product to any third party other than an Authorized User.
+
+9. Investigation of Unauthorized Use and Distribution
+If Hackolade reasonably suspects that the Product has been distributed to or obtained by any person or party without Hackolade�s prior written consent, Hackolade has the right to reasonably request once per calendar year from the Licensee an unqualified certificate executed by the Licensee�s auditor or authorized representative at the Licensee�s cost for the purpose of verifying compliance with Authorized Use of the Product.
+
+10. Licensee�s Restrictions
+Licensee will not, without the prior written consent of Hackolade, which may be withheld in Hackolade�s sole discretion and which may include certain conditions:
+
+(a) decompile, reverse engineer, disassemble, analyze, modify, adapt, convert, create derivative works from, or otherwise attempt to derive, the Protected Code;
+
+(b) sell, sublicense, redistribute, reproduce, transmit, circulate, disseminate, translate or reduce to or from any electronic medium or machine readable form the Product or any data/information provided to the Licensee through the Product to a person (except that nothing in Clause 10(b) is intended to prevent an Authorized User undertaking Authorized Use);
+
+(c) vary or amend the Authorized Use without Hackolade�s prior written approval;
+
+(d) except as otherwise permitted in this EULA, publish, promote, broadcast, circulate or refer publicly to the Hackolade name, trade name, trademark, service mark or logo;
+
+(e) commit any act or omission the likely result of which is that Hackolade�s reputation will be brought into disrepute or which act or omission could reasonably be expected to have or does have a material and adverse effect on Hackolade�s interests.  In addition, the Product includes license protection mechanisms that are designed to manage and protect the intellectual property rights of Hackolade.
+
+Licensee must not modify or alter those features to try to defeat the Product use rules that the license protection mechanisms are designed to enforce.
+
+11. Term
+The term of this Agreement begins on the Commencement Date and will continue in full force and effect unless terminated in accordance with Clause 12 below.
+
+12. Termination
+Licensee may terminate this Agreement at any time by destroying all copies of the Product in its possession. Either party hereto may terminate this Agreement if the other party commits a material breach and such party does not cure such material breach within thirty (30) days of written notice of such breach. Licensee agrees upon termination of this License to destroy all copies of the Product in its possession.
+
+Hackolade reserves the right to discontinue the Product at any time. In this event, Hackolade will announce an End-Of-Life date on the Hackolade website. The End-Of-Life date will be at least 12 months after the announcement date. Hackolade will honor the terms of this Agreement until the End-Of-Life date. Should Licensee�s Software Maintenance period exceed the End-Of-Life date, Hackolade will offer a refund for any unused maintenance time. At the End-Of-Life date, this Agreement will terminate.
+
+Clauses 1, 4, 8 � 10, 13 � 24 shall survive any termination of this Agreement.
+
+13. Infringement Indemnification
+(a) Hackolade will defend, indemnify, hold Licensee and its directors, officers, employees and other agents (collectively, �Licensee Indemnitees�) harmless, at Hackolade�s sole cost and expense, any action brought against any Licensee Indemnitee based upon the claim that the Product, if used within the scope of the License granted under this Agreement, infringes, violates, or misappropriates a patent, trademark, copyright, trade secret, or other intellectual property or proprietary right (�IP Claim�); provided, however, that: (i) Licensee shall notify Hackolade promptly in writing of any such IP Claim; (ii) Licensee shall not enter into any settlement or compromise on any IP Claim without Hackolade�s prior written consent; (iii) Hackolade shall have sole control of any such action and settlement negotiations so long as there is no detriment or liability to Licensee; and (iv) Licensee shall provide Hackolade with reasonable information and assistance, at Hackolade�s request and sole cost and expense, necessary to settle, defend, indemnify or hold harmless such IP Claim. Hackolade agrees to pay all damages and costs incurred Licensee attributable to such IP Claim. The foregoing states the sole liability of Hackolade and the exclusive remedy of Licensee for any infringement of intellectual property rights by the Product or any other items provided by Hackolade hereunder.
+
+(b) If the Product becomes, or in the opinion of Hackolade may become, the subject of a claim of infringement of any third party right, Hackolade may, at its option and in its discretion promptly: (i) procure for Licensee the right to use the Product free of any liability; (ii) replace or modify the Product to make it noninfringing; or (iii) refund any License Fees related to this Product paid by Licensee.
+
+(c) Exclusions from Defense Obligation. Hackolade will have no duty to defend any IP Claim to the extent such IP Claim is based on: (i) use of a superseded release of the Product, if such infringement would have been avoided by the use of a current release of the Product and Hackolade timely notified Licensee of the availability of the non-infringing Product at no additional cost; (ii) the combination, operation, or use of the Product with programs or data not furnished by Hackolade or at Hackolade�s direction, or with hardware or operating system software other than the hardware platform and operating system with which the Product is designed to function, if such infringement would have been avoided by the use of the Product without such programs, data, hardware or operating systems; (iii) modification or attempted modification of the Product by anyone except Hackolade or at Hackolade�s direction, or use or distributions of such modifications; or (iv) Licensee�s use of the Product in a manner that results in defamation, violates the privacy rights of individuals, transmits material in violation of any applicable law, rule, regulation, or uses any proprietary thirty party content without legally binding consent of such third party.
+
+(d) To the extent an IP Claim is excluded from Hackolade�s defense obligation, is based upon the claim that any modifications to the Product or combination of the Product with products, not provided by Hackolade or at Hackolade�s direction, infringes or violates any third party, Licensee will defend or settle, at its expense, any action brought against Hackolade provided, however, that: (i) Hackolade shall notify Licensee promptly in writing of any such claim; (ii) Hackolade shall not enter into any settlement or compromise any such claim without Licensee�s prior written consent; (iii) Licensee shall have sole control of any such action and settlement negotiations; and (iv) Hackolade shall provide Licensee with information and assistance, at Licensee�s request and expense, necessary to settle or defend such claim. Licensee agrees to pay all damages and costs finally awarded against Hackolade attributable to such claim. Hackolade may elect to assume control of the defense and settlement of any such claim with counsel of its choosing; provided however, that if Licensee will not have breached its defense and settlement obligations hereunder, Licensee will have no obligation to pay the costs and expenses of such Hackolade-controlled defense or settlement. The foregoing states the sole liability of Licensee and the exclusive remedy of Hackolade for any infringement of intellectual property rights by the Licensee modifications or combinations or any other items provided by Licensee hereunder.
+
+(e) Notwithstanding Clause 13(a) above, Hackolade assumes no liability hereunder for, and shall have no obligation to defend Licensee or to pay costs, damages or attorney's fees for, any claim based upon any modifications to any of the Product not approved by Hackolade or at Hackolade�s direction or combination of any of the Product with products not approved by Hackolade or at Hackolade�s direction.
+
+14. Limitation of Liability
+Excluding Hackolade�s indemnification obligations described in Clause 13 hereof, neither party hereto will be liable to any third-party for any loss, damage, cost, expense or other claim (including consequential, directly, indirect, special, punitive or other damages and loss of data or profits) in relation to this Agreement or the Product including, without limitation: (a) any use or reliance on a Product by the third-party (including the form and content of errors in and/or omissions from any information contained in a Product); (b) any delay, interruption or other failure in the provision of the Product; or (c) any change in the form or content of the Product. Excluding Hackolade indemnification obligations described in Clause 13 hereof, in no event will either party�s liability under any claims arising out of this Agreement exceed the fees paid by Licensee under this Agreement. Except for each party's indemnification obligations or breach of Clause 2 (�Licensee Fee�), 8 (�Unauthorized Use or Distribution�), or 10 (�Licensee�s Restrictions�), neither party will be liable for lost profits or for special, indirect, incidental or consequential damages, regardless of the form of action, even if such party is advised of or aware of the possibility of such damages. The foregoing liability limitations shall apply to the maximum extent allowed by applicable law. To the extent the foregoing liability limitations or the warranty disclaimers of Clause 4 are not allowed by applicable law, then the liability of Hackolade, and the remedy of Licensee, shall be limited to the prompt: (d) re-supply of any defective Product; or (e) refund of any license fees paid by Licensee for such defective Product.
+
+15. Ownership / Intellectual Property
+This Agreement only confers the right to use the Product and does not convey any rights of ownership in or to the Product. The Licensee acknowledges that the Product and all intellectual property rights in relation to the Product are the property of Hackolade and Hackolade is entitled to take whatever action it may decide in order to protect its intellectual property rights in the Product. Hackolade does not claim intellectual property rights over models created with the Product.
+
+16. Open Source Code
+With respect to open source software, Hackolade hereby represents and warrants: 
+
+(a) that the Licensee�s use thereof does not create, or purport to create, obligations on the Licensee to grant licenses or usage rights to the general public to any source or object code, whether such code is embedded in the Product or any other software provided under this Agreement or used in conjunction therewith; 
+
+(b) that in no event shall the Licensee be liable for any damages whatsoever, whether direct or indirect, and whether experienced by Hackolade or a third party, which are related to a loss of Hackolade or any third party resulting from such use of Open Source Software hereunder; and 
+
+(c) to, and hereby does, waive any claims it may have against the Licensee in relation to the Licensee�s use of such open source software.
+
+All open source software included in Hackolade Product is listed on Exhibit A attached to this Agreement.
+
+17. Publicity Rights
+(a) The Licensee grants Hackolade the right to reference the Licensee as a customer on Hackolade's website and in Product promotional material.
+
+(b) Licensee can deny Hackolade this right by submitting a written request via email to info@hackolade.com, requesting to be excluded from Hackolad's website and/or Product promotional material. Confirmation of such denial (via reply email) must be received prior to downloading for this exclusion to be effective.
+
+(c) Should the Licensee come to be or already be included on Hackolade's website or in Product promotional material, as a result of any prior purchases where the Licensee did not request exclusion from Product promotional material, the Licensee can at any point in time, submit a written request via email to info@hackolade.com to have Hackolade remove the Licensee's name from Product promotional material. Upon receipt of such request, Hackolade will remove any reference to the Licensee from such promotional material within 30 days and make no further reference to the Licensee.
+
+18. No Assignment or Amendment
+Licensee may not amend this Agreement without prior written consent of Hackolade. Licensee may assign this Agreement to succeeding parties in the case of a merger, acquisition or change of control so long as in doing so, Hackolade is notified in writing via email to sales@hackolade.com within ninety (90) days of the closure of such transaction. If Licensee merges into or with a direct competitor of Hackolade, as determined in Hackolade�s sole discretion, then this Agreement will automatically terminate as of the effective date of such merger. Hackolade may assign its rights and obligation under this Agreement without consent of Licensee.
+
+19. Tax
+Payments made by the Licensee under this Agreement exclude any taxes or duties payable in respect of the goods or services supplied in the jurisdiction where the payment is made or received. To the extent that any such taxes or duties are payable by Hackolade, the Licensee must pay to Hackolade the amount of such taxes or duties in addition to the license fee under this Agreement unless Licensee is exempt from paying such taxes or duties at the time such taxes or duties are levied or assessed. Hackolade will provide the Licensee with documents requested by Licensee necessary to enable the Licensee to obtain a tax or duty refund or credit.
+
+20. Governing Law
+This Agreement is governed by the laws of Belgium, regardless of conflict of law provisions, and the parties hereby irrevocably and unconditionally submit to the exclusive jurisdiction of the courts in Brussels, Belgium.
+
+21. Attorneys Fees
+The prevailing party in any legal action or arbitration relating to this Agreement will be entitled to recover its attorneys� fees and litigation costs and expenses incurred in connection with such action or arbitration as part of the same proceeding.
+
+22. Counterparts/Signatures
+This Agreement may be executed in any number of counterparts, each of which will be an original and all of which will constitute together one and the same document.
+
+23. No Waiver
+The failure of either party hereto to prosecute its rights with respect to a breach hereunder will not constitute a waiver of the right to enforce its rights with respect to the same or any other breach.
+
+24. Notices
+Hackolade may give notice by means of a general notice on the Hackolade website, electronic mail to your e-mail address on record with Hackolade, or by written communication sent by postal mail to the Licensee's address on record. Such notice will be deemed to have been given upon the expiration of 48 hours after mailing or posting or 12 hours after sending (if sent by email). The Licensee may give notice to Hackolade at any time by any of the following: letter delivered by internationally recognized overnight delivery service or registered postal mail to Hackolade�s addresses on its website.
+
+Licensee agrees that the Product will not be shipped, transferred or exported into any country or used in any manner prohibited by any export laws, restrictions or regulations.
+
+
+Exhibit A � Open Source Components/Libraries
+All Product Versions
+
+Open Source Components:
+Library 			Copyright 							License
+=======				=========							=======
+Aws-sdk				(c) 2004 Amazon Web Services		Apache
+Babel				(c) 2014-2016 Sebastian McKenzie	MIT
+Brace				(c) 2013 Thorsten Lorenz			MIT
+Brace-expansion		(c) 2013 Julian Gruber				MIT
+Bson				(c) 2015 MongoDB Inc.				Apache
+Chai				(c) 2011-2015 Jake Luer				MIT
+Chardet				(c) 2013 Dmitry Shirokov			MIT
+Classnames			(c) 2016 Jed Watson					MIT
+Cross-env			(c) 2015 Kent C. Dodds				MIT
+D3					(c) 2010-2016 Michael Bostock		BSD
+DocumentDB			(c) 2014 Microsoft Corporation		MIT
+dom-to-image		(c) 2015 Anatolii Saienko			MIT
+Elasticsearch		(c) 2014 Elasticsearch				Apache
+Electron			(c) 2016 GitHub Inc.				MIT
+File-loader			(c) 2016 Tobias Koppers				MIT
+Font-awesome		(c) 2016 Dave Gandy					MIT
+Fs-extra			(c) 2011-2016 JP Richardson			MIT
+Generate-schema		(c) 2015 Nijiko Yonskai				MIT
+HBase				(c) 2008-2010, SARL Adaltas.		BSD
+History				(c) 2015-2016 Michael Jackson		BSD
+html-pdf			(c) 2016 Marc Bachmann				MIT
+html2canvas			(c) 2012 Niklas von Hertzen			MIT
+Jayschema			(c) 2013 Nate Silva					BSD
+Jsdiff				(c) 2009-2015, Kevin Decker			BSD
+Json-lint			(c) 2012 Zachary Carter				MIT
+Lodash				(c) 2012-2016 The Dojo Foundation	MIT
+Machine-uuid		(c) 2015 M H Zed 					MIT
+Mocha				(c) 2011-2016 TJ Holowaychuk		MIT
+MongoDB-collection-sample	(c) 2015 MongoDB Inc.		Apache
+MongoDB-connection-model	(c) 2015 MongoDB Inc.		Apache
+MongoDB-schema		(c) 2015 MongoDB Inc.				Apache
+Mongodb-uri-node	(c) 2013 ObjectLabs Corporation.	MIT
+Node-macaddress		(c) 2015-2016 Julian Fleischer		MIT
+Node-uuid			(c) 2010-2012 Robert Kieffer		MIT
+Phantomjs			(c) 2005-2016 Ariya Hidayat			BSD
+Postal				(c) 2015 Jim Cowart					MIT
+React				(c) 2013-present, Facebook, Inc.	MIT
+React-ace			(c) 2014 James Hrisho				MIT
+React-Draggable		(c) 2014-2016 Matt Zabriskie		MIT
+React-native-listener	(c) 2015 Erik Rasmussen			MIT
+React-virtualized	(c) 2015 Brian Vaughn				MIT
+Redux				(c) 2015 Dan Abramov				MIT
+rimraf				(c) Isaac Z. Schlueter and Contributors	ISC
+rsa-pem-from-mod-exp    (c) 2014 Michael J. Ryan        MIT
+Semver				(c) Isaac Z. Schlueter and Contributors	ISC			
+Sort-Json			(c) 2016 David Björklund			
+Spellchecker		(c) 2016 Atom						MIT
+Split.js			(c) 2015 Nathan Cahill				MIT
+Twitter Bootstrap	(c) 2011-2016 Twitter, Inc.			MIT
+uuid            	(c) 2010-2016 Robert Kieffer		MIT
+W3c-blob			(c) 2016 Chris Dickinson			MIT
+XLSX				(c) 2012-2015  SheetJS				Apache
+XMLDOM				(c) 2012-2016 jindw					MIT
+Xml-Crypto			(c) 2012-2016 Yaron Naveh			MIT
+Yargs				(c) 2010 James Halliday				MIT
+
+Open Source Media Libraries:
+Library				Copyright				License
+=======				=========				=======
+Icons8				(c) 2016 VisualPharm LLC		CC
+

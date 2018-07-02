@@ -1,5 +1,5 @@
 DEFINED_PHASES=install postinst prepare unpack
-DEPEND=app-shells/zsh >=dev-vcs/git-1.8.2.1
+DEPEND=app-shells/zsh >=dev-vcs/git-1.8.2.1[curl]
 DESCRIPTION=A ready-to-use zsh configuration with plugins
 EAPI=5
 HOMEPAGE=https://github.com/robbyrussell/oh-my-zsh
@@ -7,5 +7,5 @@ KEYWORDS=~x86 ~amd64
 LICENSE=MIT
 RDEPEND=app-shells/zsh
 SLOT=0
-_eclasses_=git-r3	af51ccfceeb403ab80f1bf9209d372c8
+_eclasses_=git-r3	8f6de46b0aa318aea0e8cac62ece098b
 _md5_=dad682003862ed96166aaa5ccc506a6e
