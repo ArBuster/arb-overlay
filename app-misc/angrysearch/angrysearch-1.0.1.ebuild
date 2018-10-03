@@ -3,7 +3,7 @@
 
 EAPI="6"
 PYTHON_REQ_USE="sqlite"
-PYTHON_COMPAT=( python{3_4,3_5} )
+PYTHON_COMPAT=( python{3_4,3_5,3_6} )
 
 inherit eutils python-single-r1
 
@@ -16,7 +16,7 @@ RESTRICT="mirror"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="notification python_single_target_python3_4 python_single_target_python3_5 fm_integration"
+IUSE="notification python_single_target_python3_4 python_single_target_python3_5 python_single_target_python3_6 fm_integration"
 
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 DEPEND="${PYTHON_DEPS}
