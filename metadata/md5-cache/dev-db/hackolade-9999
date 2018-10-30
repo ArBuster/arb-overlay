@@ -7,5 +7,5 @@ LICENSE=Hackolade
 RESTRICT=mirror
 SLOT=0
 SRC_URI=amd64? ( https://s3-eu-west-1.amazonaws.com/hackolade/current/Hackolade-linux-x64.zip -> hackolade.zip )
-_eclasses_=desktop	1b286a7e7143d8c4ec89cd0d2743a097
+_eclasses_=desktop	b1d22ac8bdd4679ab79c71aca235009d
 _md5_=19aad32054f0a40cb573119486c9703b
