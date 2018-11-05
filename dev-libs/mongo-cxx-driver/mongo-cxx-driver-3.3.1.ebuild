@@ -20,8 +20,8 @@ IUSE="+ssl static-libs"
 
 RDEPEND="
 	!dev-db/tokumx
-	>=dev-libs/mongo-c-driver-1.7.0[ssl?,static-libs?]
-	>=dev-libs/libbson-1.7.0[static-libs?]
+	=dev-libs/mongo-c-driver-1.10.3[ssl?,static-libs?]
+	=dev-libs/libbson-1.10.3[static-libs?]
 	dev-libs/mnmlstc-core
 	"
 DEPEND="${RDEPEND}"
@@ -35,27 +35,17 @@ src_configure(){
     
     local mycmakeargs=(
         "-DCMAKE_INSTALL_PREFIX=/usr"
+        "-DCMAKE_PREFIX_PATH=${INCLUDE_DIR}"
         "-DBSONCXX_POLY_USE_SYSTEM_MNMLSTC=1"
-        "-DLIBMONGOC_DIR=/usr/lib"
-        "-DLIBBSON_DIR=/usr/lib"
-        "-DLIBBSON_INCLUDE_DIRS=${INCLUDE_DIR}"
-        "-DLIBMONGOC_INCLUDE_DIRS=${INCLUDE_DIR}"
         )
         
-    if ! use static-libs ; then
-    #    mycmakeargs+=("-DBUILD_SHARED_LIBS=OFF")
-    #else
-        sed -i '180,183d' "${S}/src/bsoncxx/CMakeLists.txt"
-        sed -i '191,194d' "${S}/src/mongocxx/CMakeLists.txt"
+    if use static-libs ; then
+        mycmakeargs+=("-DBUILD_SHARED_LIBS=OFF")
     fi
-    
+
     if ! use ssl ; then
         mycmakeargs+=("-DMONGOCXX_ENABLE_SSL=OFF")
     fi
-    
-    sed -e "s/DESTINATION lib COMPONENT/DESTINATION $(get_libdir) COMPONENT/g" \
-        -i "${S}/src/bsoncxx/CMakeLists.txt" \
-        -i "${S}/src/mongocxx/CMakeLists.txt"
       
     cmake-utils_src_configure
 }
