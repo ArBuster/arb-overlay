@@ -8,6 +8,7 @@ inherit autotools-utils git-r3
 DESCRIPTION="Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks."
 HOMEPAGE="https://github.com/shadowsocks/simple-obfs"
 EGIT_REPO_URI="https://github.com/shadowsocks/simple-obfs.git"
+RESTRICT="mirror"
 
 LICENSE="GPL-3"
 SLOT="0"
