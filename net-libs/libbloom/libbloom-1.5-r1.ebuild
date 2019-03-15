@@ -1,12 +1,13 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
 
+inherit toolchain-funcs
+
 DESCRIPTION="A simple and small bloom filter implementation in plain C."
 HOMEPAGE="https://github.com/jvirkki/libbloom"
 SRC_URI="https://github.com/jvirkki/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
-RESTRICT="mirror"
 
 LICENSE="BSD"
 SLOT="0"
@@ -17,14 +18,7 @@ DEPEND=""
 RDEPEND="${DEPEND}"
 
 src_compile() {
-    local BITS
-    if use amd64; then
-        BITS="64"
-    fi
-    if use x86; then
-        BITS="32"
-    fi
-    BITS=$BITS emake 
+	emake CC=$(tc-getCC) BITS=default OPT=
 }
 
 src_install() {
