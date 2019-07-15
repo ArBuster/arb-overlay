@@ -1,0 +1,20 @@
+--- a/ANGRYsearch-1.0.1/angrysearch.py
++++ b/ANGRYsearch-1.0.1/angrysearch2.py
+@@ -29,12 +29,15 @@
+ 
+ # SCANDIR ALLOWS MUCH FASTER INDEXING OF THE FILE SYSTEM, OBVIOUS IN LITE MODE
+ # IS NOW PART OF PYTHON 3.5, FUNCTIONALY REPLACING os.walk
++'''
+ try:
+     import scandir
+     SCANDIR_AVAILABLE = True
+ except ImportError:
+     SCANDIR_AVAILABLE = False
+-
++'''
++
++SCANDIR_AVAILABLE = False
+ # THE DATABASE WAS BUILD USING FTS5 EXTENSION OF SQLITE3
+ FTS5_AVAILABLE = False
+ 
+

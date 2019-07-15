@@ -33,10 +33,13 @@ DOCS=( README.md )
 S="${WORKDIR}/ANGRYsearch-${PV}"
 
 src_prepare() {
+    default
 	sed -i angrysearch.desktop \
 		-e "s:Exec=python3 /usr/share/angrysearch/angrysearch.py:Exec=angrysearch:" \
 		|| die
-	default_src_prepare
+	
+	epatch "${FILESDIR}/${PF}.patch"
+	eapply_user
 }
 
 src_install() {
