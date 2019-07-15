@@ -1,5 +1,5 @@
 --- a/ANGRYsearch-1.0.1/angrysearch.py
-+++ b/ANGRYsearch-1.0.1/angrysearch2.py
++++ b/ANGRYsearch-1.0.1/angrysearch.py
 @@ -29,12 +29,15 @@
  
  # SCANDIR ALLOWS MUCH FASTER INDEXING OF THE FILE SYSTEM, OBVIOUS IN LITE MODE
