@@ -1,0 +1,14 @@
+DEFINED_PHASES=configure postinst postrm
+DEPEND=>=net-misc/curl-7.19.1 dev-libs/libpcre >=dev-libs/glib-2.32:2 >=x11-libs/gtk+-3.4:3 gnutls? ( net-libs/gnutls dev-libs/libgcrypt:0 ) aria2? ( net-misc/aria2[xmlrpc] ) ayatana? ( dev-libs/libappindicator:3 ) gstreamer? ( media-libs/gstreamer:1.0 ) libnotify? ( x11-libs/libnotify ) openssl? ( dev-libs/openssl:0 ) integrator? ( www-plugins/uget-integrator ) dev-util/intltool virtual/pkgconfig sys-devel/gettext
+DESCRIPTION=Download manager using gtk+ and libcurl
+EAPI=6
+HOMEPAGE=http://www.ugetdm.com
+IUSE=+aria2 ayatana control-socket +gnutls gstreamer +integrator libnotify nls openssl rss
+KEYWORDS=amd64 ~arm ~ppc x86
+LICENSE=LGPL-2.1
+RDEPEND=>=net-misc/curl-7.19.1 dev-libs/libpcre >=dev-libs/glib-2.32:2 >=x11-libs/gtk+-3.4:3 gnutls? ( net-libs/gnutls dev-libs/libgcrypt:0 ) aria2? ( net-misc/aria2[xmlrpc] ) ayatana? ( dev-libs/libappindicator:3 ) gstreamer? ( media-libs/gstreamer:1.0 ) libnotify? ( x11-libs/libnotify ) openssl? ( dev-libs/openssl:0 ) integrator? ( www-plugins/uget-integrator )
+REQUIRED_USE=^^ ( gnutls openssl )
+SLOT=0
+SRC_URI=mirror://sourceforge/urlget/uget-2.2.0.tar.gz
+_eclasses_=desktop	b1d22ac8bdd4679ab79c71aca235009d	epatch	a1bf4756dba418a7238f3be0cb010c54	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	6e6c2737b59a4b982de6fb3ecefd87f8	gnome2-utils	532371cfcba45b2ab0d2950547c97d95	ltprune	2729691420b6deeda2a90b1f1183fb55	multilib	1d91b03d42ab6308b5f4f6b598ed110e	preserve-libs	ef207dc62baddfddfd39a164d9797648	toolchain-funcs	2f8b8f320bee13b71a8a54cc6d09e08a	vcs-clean	2a0f74a496fa2b1552c4f3398258b7bf	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
+_md5_=a0b86429c98580be5abb2257805f37c9

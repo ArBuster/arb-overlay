@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<use>
+		<flag name="chrome">install uget-integrator for chrome</flag>
+		<flag name="chromium">install uget-integrator for chromium</flag>
+		<flag name="firefox">install uget-integrator for firefox</flag>
+		<flag name="opera">install uget-integrator for opera</flag>
+	</use>
+</pkgmetadata>

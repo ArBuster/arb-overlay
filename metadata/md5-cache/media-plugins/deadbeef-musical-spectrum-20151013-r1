@@ -1,7 +1,7 @@
 DEFINED_PHASES=compile install
 DEPEND=sci-libs/fftw:3.0= media-sound/deadbeef:0 gtk2? ( media-sound/deadbeef:0[gtk2] ) gtk3? ( media-sound/deadbeef:0[gtk3] )
 DESCRIPTION=DeaDBeeF musical spectrum plugin
-EAPI=6
+EAPI=7
 HOMEPAGE=https://github.com/cboxdoerfer/ddb_musical_spectrum
 IUSE=+gtk2 gtk3
 KEYWORDS=~amd64 ~x86
@@ -11,5 +11,5 @@ REQUIRED_USE=|| ( gtk2 gtk3 )
 RESTRICT=mirror
 SLOT=0
 SRC_URI=https://github.com/cboxdoerfer/ddb_musical_spectrum/archive/353870a66adae81d138a34ea5ebb8ab876b05b40.tar.gz -> deadbeef-musical-spectrum-20151013.tar.gz
-_eclasses_=deadbeef-plugins	a9321cceb44b8115b20d010ca53f84ec	desktop	b1d22ac8bdd4679ab79c71aca235009d	epatch	a1bf4756dba418a7238f3be0cb010c54	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	6e6c2737b59a4b982de6fb3ecefd87f8	ltprune	2729691420b6deeda2a90b1f1183fb55	multilib	b2f01ad412baf81650c23fcf0975fa33	preserve-libs	ef207dc62baddfddfd39a164d9797648	toolchain-funcs	f164325a2cdb5b3ea39311d483988861	vcs-clean	2a0f74a496fa2b1552c4f3398258b7bf
-_md5_=d3d60321a822f8c4568b80457b018341
+_eclasses_=deadbeef-plugins	2a81bfb0b9817ac638fe4ebd60348e99	eutils	6e6c2737b59a4b982de6fb3ecefd87f8
+_md5_=fb6afecec65e665553f3e3f3f1ff8b36

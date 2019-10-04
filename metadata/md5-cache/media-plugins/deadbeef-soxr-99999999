@@ -1,11 +1,13 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=install unpack
-DEPEND=media-libs/soxr:0 media-sound/deadbeef:0 >=dev-vcs/git-1.8.2.1[curl]
+DEPEND=media-libs/soxr:0 media-sound/deadbeef:0
 DESCRIPTION=DeaDBeeF sox resampler plugin
-EAPI=6
+EAPI=7
 HOMEPAGE=https://github.com/silentlexx/deadbeef_soxr
 LICENSE=GPL-2
+PROPERTIES=live
 RDEPEND=media-libs/soxr:0 media-sound/deadbeef:0
 RESTRICT=mirror
 SLOT=0
-_eclasses_=deadbeef-plugins	a9321cceb44b8115b20d010ca53f84ec	desktop	b1d22ac8bdd4679ab79c71aca235009d	epatch	a1bf4756dba418a7238f3be0cb010c54	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	6e6c2737b59a4b982de6fb3ecefd87f8	git-r3	0d4635eeb5a96cd5315597a47eba25c9	ltprune	2729691420b6deeda2a90b1f1183fb55	multilib	b2f01ad412baf81650c23fcf0975fa33	preserve-libs	ef207dc62baddfddfd39a164d9797648	toolchain-funcs	f164325a2cdb5b3ea39311d483988861	vcs-clean	2a0f74a496fa2b1552c4f3398258b7bf
-_md5_=c50c79b4f5e974dee87f0ce63b8e7be4
+_eclasses_=deadbeef-plugins	2a81bfb0b9817ac638fe4ebd60348e99	eutils	6e6c2737b59a4b982de6fb3ecefd87f8	git-r3	562b380fc59ae6a8622171d0acb777d1
+_md5_=61686771870fc323adbe2ab15d7f5879
