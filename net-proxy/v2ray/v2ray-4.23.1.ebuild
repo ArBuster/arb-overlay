@@ -34,6 +34,6 @@ src_install() {
 }
 
 pkg_postinst() {
-    einfo "Configuration file path: /etc/v2ray/config.json"
-    einfo "Using systemctl start v2ray to start service"
+    ewarn "Configuration file path: /etc/v2ray/config.json"
+    ewarn "Using systemctl start v2ray to start service"
 }
