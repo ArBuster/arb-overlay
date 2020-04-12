@@ -28,12 +28,12 @@ src_install() {
 	dobin v2ray v2ctl
 
 	insinto /etc/v2ray
-	doins config.json
+	doins ${FILESDIR}/{server,client}.conf
 
-	systemd_dounit ${FILESDIR}/v2ray.service
+	systemd_dounit ${FILESDIR}/v2ray_at.service
 }
 
 pkg_postinst() {
-    ewarn "Configuration file path: /etc/v2ray/config.json"
-    ewarn "Using systemctl start v2ray to start service"
+    ewarn "Configuration files path: /etc/v2ray"
+    ewarn "Using systemctl start v2ray@[server or client] to start service"
 }
