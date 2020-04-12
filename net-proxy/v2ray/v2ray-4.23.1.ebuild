@@ -30,7 +30,7 @@ src_install() {
 	insinto /etc/v2ray
 	doins ${FILESDIR}/{server,client}.conf
 
-	systemd_dounit ${FILESDIR}/v2ray@.service
+	systemd_dounit "${FILESDIR}/v2ray@.service"
 }
 
 pkg_postinst() {
