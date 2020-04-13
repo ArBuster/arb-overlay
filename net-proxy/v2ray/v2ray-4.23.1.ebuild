@@ -35,5 +35,5 @@ src_install() {
 
 pkg_postinst() {
     ewarn "Configuration files path: /etc/v2ray"
-    ewarn "Using systemctl start v2ray@[server or client] to start service"
+    ewarn "Using systemctl start v2ray@{server or client}.service to start service"
 }
