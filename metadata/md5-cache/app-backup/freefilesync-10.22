@@ -8,5 +8,5 @@ RDEPEND=>=x11-libs/wxGTK-3.0.3:3.0[X] dev-libs/boost
 RESTRICT=mirror
 SLOT=0
 SRC_URI=https://freefilesync.org/download/FreeFileSync_10.22_Linux.tar.gz
-_eclasses_=desktop	b1d22ac8bdd4679ab79c71aca235009d
+_eclasses_=desktop	7fd20552ce4cc97e8acb132a499a7dd8
 _md5_=b4462c95a272b399d85e8a09704599ff
