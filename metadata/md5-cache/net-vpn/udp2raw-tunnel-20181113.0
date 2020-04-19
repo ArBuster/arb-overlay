@@ -1,0 +1,14 @@
+BDEPEND=filecaps? ( sys-libs/libcap ) virtual/pkgconfig
+DEFINED_PHASES=compile install postinst prepare
+DESCRIPTION=A tunnel which turns UDP traffic into encrypted FakeTCP/UDP/ICMP traffic
+EAPI=7
+HOMEPAGE=https://github.com/wangyu-/udp2raw-tunnel
+IUSE=cpu_flags_x86_aes +filecaps
+KEYWORDS=amd64 ~x86
+LICENSE=MIT
+RDEPEND=net-firewall/iptables
+RESTRICT=mirror
+SLOT=0
+SRC_URI=https://codeload.github.com/wangyu-/udp2raw-tunnel/tar.gz/20181113.0 -> udp2raw-tunnel-20181113.0.tar.gz
+_eclasses_=fcaps	ec29518af791bd4f819e5d42f0f4c11f	multilib	318e8ae683e57fd3ccd0d31a769d8ee8	systemd	71fd8d2065d102753fb9e4d20eaf3e9f	toolchain-funcs	512eb3367f507ebaa1d1d43ab7d66e6c
+_md5_=350ea7af45cd4cd119f40c01095338b3
