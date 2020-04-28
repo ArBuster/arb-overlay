@@ -8,15 +8,15 @@ PLOCALES="be bg bn ca cs da de el en_GB es et eu fa fi fr gl he hr hu id it ja k
 
 PLOCALE_BACKUP="en_GB"
 
-inherit autotools eutils git-r3 gnome2-utils l10n xdg-utils
+inherit autotools gnome2-utils l10n xdg-utils
 
-EGIT_REPO_URI="https://github.com/DeadBeeF-Player/${PN}.git"
-EGIT_BRANCH="master"
+SRC_URI="https://github.com/DeaDBeeF-Player/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
-KEYWORDS=""
+KEYWORDS="~amd64 ~x86"
 
 DESCRIPTION="foobar2k-like music player"
 HOMEPAGE="http://deadbeef.sourceforge.net"
+RESTRICT="mirror"
 
 LICENSE="BSD
 	UNICODE
@@ -136,8 +136,10 @@ DEPEND="${RDEPEND}
 	mac? ( x86? ( dev-lang/yasm:0 )
 		amd64? ( dev-lang/yasm:0 ) )"
 
+S="${WORKDIR}/${P}"
+
 src_prepare() {
-	if [[ $(l10n_get_locales disabled) =~ "ru" ]] ; then
+	if [[ "$(l10n_get_locales disabled)" =~ "ru" ]] ; then
 		eapply "${FILESDIR}/${P}-remove-ru-help-translation.patch"
 		rm -v "${S}/translation/help.ru.txt" || die
 	fi
@@ -147,7 +149,7 @@ src_prepare() {
 			-i "${S}/po/LINGUAS" || die
 	}
 
-        l10n_for_each_disabled_locale_do remove_locale
+	l10n_for_each_disabled_locale_do remove_locale
 
 	if use midi ; then
 		# set default gentoo path
@@ -163,6 +165,8 @@ src_prepare() {
 	eapply_user
 
 	config_rpath_update "${S}/config.rpath"
+	
+	eautopoint -f
 	eautoreconf
 }
 
@@ -176,7 +180,6 @@ src_configure() {
 	econf --disable-coreaudio \
 		--disable-portable \
 		--disable-static \
-		--docdir=/usr/share/${PN} \
 		"${ffmpeg_configure}" \
 		$(use_enable aac) \
 		$(use_enable adplug) \

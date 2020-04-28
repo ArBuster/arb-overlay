@@ -165,6 +165,8 @@ src_prepare() {
 	eapply_user
 
 	config_rpath_update "${S}/config.rpath"
+	
+	eautopoint -f
 	eautoreconf
 }
 

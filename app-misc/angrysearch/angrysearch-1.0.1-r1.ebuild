@@ -20,12 +20,12 @@ IUSE="notification python_single_target_python3_4 python_single_target_python3_5
 
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 DEPEND="${PYTHON_DEPS}
-	>=dev-python/PyQt5-5.4.1[${PYTHON_USEDEP},gui]
+	$(python_gen_cond_dep '>=dev-python/PyQt5-5.4.1[${PYTHON_USEDEP},gui]' )
 	>=app-admin/sudo-1.8.12
 	>=x11-libs/libxkbcommon-0.5.0
 	>=x11-misc/xdg-utils-1.1.0_rc2"
 RDEPEND="${DEPEND}
-	notification? ( dev-python/pygobject[${PYTHON_USEDEP}] )
+	$(python_gen_cond_dep 'notification? ( dev-python/pygobject[${PYTHON_USEDEP}] )' )
 	fm_integration? ( x11-misc/xdotool )"
 
 DOCS=( README.md )
@@ -37,8 +37,8 @@ src_prepare() {
 	sed -i angrysearch.desktop \
 		-e "s:Exec=python3 /usr/share/angrysearch/angrysearch.py:Exec=angrysearch:" \
 		|| die
-	
-	epatch "${FILESDIR}/${PF}.patch"
+
+	epatch "${FILESDIR}/${P}.patch"
 	eapply_user
 }
 

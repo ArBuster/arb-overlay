@@ -1,5 +1,5 @@
---- a/deadbeef.desktop.in.org	2019-04-27 22:19:36.685464263 -0000
-+++ b/deadbeef.desktop.in	2019-04-27 22:22:48.415836923 -0000
+--- a/deadbeef.desktop.in
++++ b/deadbeef.desktop.in
 @@ -20,32 +20,4 @@
  Keywords=Sound;Music;Audio;Player;Musicplayer;MP3;
  Keywords[zh_TW]=Sound;Music;Audio;Player;Musicplayer;MP3;音樂;音樂播放器;播放器;音訊;
