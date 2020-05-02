@@ -1,14 +1,14 @@
+BDEPEND=>=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
 DEFINED_PHASES=configure postinst prepare
-DEPEND=ssl? ( !libressl? ( dev-libs/openssl:0= ) libressl? ( dev-libs/libressl:0= ) ) nls? ( sys-devel/gettext ) >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+DEPEND=ssl? ( !libressl? ( dev-libs/openssl:0= ) libressl? ( dev-libs/libressl:0= ) ) nls? ( sys-devel/gettext )
 DESCRIPTION=Light Unix download accelerator
-EAPI=6
+EAPI=7
 HOMEPAGE=https://github.com/axel-download-accelerator/axel
 IUSE=debug libressl nls ssl
-KEYWORDS=~x86 ~amd64
+KEYWORDS=~amd64 ~hppa ~ppc ~ppc64 ~sparc ~x86
 LICENSE=GPL-2
 RDEPEND=ssl? ( !libressl? ( dev-libs/openssl:0= ) libressl? ( dev-libs/libressl:0= ) ) nls? ( virtual/libintl virtual/libiconv )
-REQUIRED_USE=libressl? ( ssl )
 SLOT=0
-SRC_URI=https://github.com/axel-download-accelerator/axel/archive/v2.16.1.tar.gz -> axel-2.16.1.tar.gz
+SRC_URI=https://github.com/axel-download-accelerator/axel/releases/download/v2.17.8/axel-2.17.8.tar.xz
 _eclasses_=autotools	7d999b62b8749fad43fff00620cedf47	libtool	f143db5a74ccd9ca28c1234deffede96	multilib	318e8ae683e57fd3ccd0d31a769d8ee8	toolchain-funcs	512eb3367f507ebaa1d1d43ab7d66e6c
-_md5_=3e59c968da212e3c5283951e3a5f369e
+_md5_=bdc7b45361846432ddb9247327c6c2f8
