@@ -47,5 +47,5 @@ src_install() {
 }
 
 pkg_postinst() {
-	fcaps cap_net_raw cap_net_bind_service /usr/bin/${PN}
+	fcaps cap_net_raw,cap_net_bind_service /usr/bin/${PN}
 }
