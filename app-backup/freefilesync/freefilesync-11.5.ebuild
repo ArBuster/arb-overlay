@@ -8,12 +8,12 @@ inherit desktop
 DESCRIPTION="FreeFileSync is a folder comparison and synchronization tool"
 HOMEPAGE="https://www.freefilesync.org"
 SRC_URI="https://freefilesync.org/download/FreeFileSync_${PV}_Linux.tar.gz"
-RESTRICT="fetch"
+RESTRICT="fetch strip"
 
 LICENSE="GPL-3"
 
 SLOT="0"
-KEYWORDS="amd64"
+KEYWORDS="x86 amd64"
 
 RDEPEND="
         app-accessibility/at-spi2-core
@@ -27,7 +27,7 @@ RDEPEND="
         x11-libs/libSM
         x11-libs/libX11
         x11-libs/pango
-        "
+"
 
 S=${WORKDIR}
 MY_PN="FreeFileSync"
@@ -37,6 +37,7 @@ RTS_PN="realtimesync"
 src_install(){
     insinto "/opt"
     doins -r *
+
     dosym "/opt/${MY_PN}/FreeFileSync" "/usr/bin/${FFS_PN}"
     dosym "/opt/${MY_PN}/RealTimeSync" "/usr/bin/${RTS_PN}"
 
@@ -46,8 +47,8 @@ src_install(){
     fperms +x "/opt/${MY_PN}/RealTimeSync"
     fperms +x "/opt/${MY_PN}/Bin/FreeFileSync_x86_64"
     fperms +x "/opt/${MY_PN}/Bin/RealTimeSync_x86_64"
-    #fperms +x "/opt/${MY_PN}/Bin/FreeFileSync_i686"
-    #fperms +x "/opt/${MY_PN}/Bin/RealTimeSync_i686"
+    fperms +x "/opt/${MY_PN}/Bin/FreeFileSync_i686"
+    fperms +x "/opt/${MY_PN}/Bin/RealTimeSync_i686"
 
     make_desktop_entry "${FFS_PN}" "FreeFileSync" "FreeFileSync" "Utility;Archiving" "GenericName=File synchronization tool"
     #doicon "${FILESDIR}/FreeFileSync.png"
