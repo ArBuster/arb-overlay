@@ -3,7 +3,7 @@
 
 EAPI=6
 
-inherit eutils
+inherit eutils multilib
 
 DESCRIPTION="Native messaging host to integrate uGet Download Manager with web browsers"
 HOMEPAGE="https://github.com/ugetdm/${PN}"
@@ -39,7 +39,7 @@ src_install(){
     fi
     
     if use firefox; then
-        insinto "/usr/lib/mozilla/native-messaging-hosts"
+        insinto "/usr/$(get_abi_LIBDIR)/mozilla/native-messaging-hosts"
         doins "conf/com.ugetdm.firefox.json"
     fi
     
