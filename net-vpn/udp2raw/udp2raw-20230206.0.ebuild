@@ -5,7 +5,7 @@ EAPI=7
 
 inherit fcaps systemd toolchain-funcs
 
-DESCRIPTION="A tunnel which turns UDP traffic into encrypted FakeTCP/UDP/ICMP traffic"
+DESCRIPTION="A Tunnel which Turns UDP Traffic into Encrypted UDP/FakeTCP/ICMP Traffic by using Raw Socket,helps you Bypass UDP FireWalls"
 HOMEPAGE="https://github.com/wangyu-/udp2raw-tunnel"
 SRC_URI="https://codeload.github.com/wangyu-/udp2raw-tunnel/tar.gz/${PV} -> ${P}.tar.gz"
 RESTRICT="mirror"
@@ -41,7 +41,7 @@ src_install() {
 	insinto "/etc/${PN}"
 	newins example.conf ${PN}.conf
 	
-	newbin udp2raw ${PN}
+	dobin udp2raw
 	
 	systemd_dounit "${FILESDIR}/${PN}.service"
 }
