@@ -8,7 +8,7 @@ inherit desktop
 DESCRIPTION="FreeFileSync is a folder comparison and synchronization tool"
 HOMEPAGE="https://www.freefilesync.org"
 SRC_URI="https://freefilesync.org/download/FreeFileSync_${PV}_Linux.tar.gz"
-RESTRICT="fetch strip"
+RESTRICT="fetch strip binchecks"
 
 LICENSE="GPL-3"
 
