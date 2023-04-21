@@ -5,8 +5,6 @@ Wants=network-online.target
 
 [Service]
 Type=simple
-User=nobody
-Group=nogroup
 ExecStart=/usr/bin/vlmcsd -i /etc/vlmcsd/vlmcsd.ini -D
 Restart=on-failure
 RestartSec=10s
