@@ -14,7 +14,7 @@ Type=exec
 
 CapabilityBoundingSet=CAP_NET_BIND_SERVICE CAP_NET_RAW
 NoNewPrivileges=true
-ExecStart=xray run -c /etc/xray/%i.conf
+ExecStart=xray run -format=json -c /etc/xray/%i.conf
 Restart=on-failure
 RestartSec=10s
 
