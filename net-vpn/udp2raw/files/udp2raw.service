@@ -4,7 +4,7 @@ After=network.target
 Wants=network-online.target
 
 [Service]
-Type=exec
+Type=simple
 CapabilityBoundingSet=CAP_NET_BIND_SERVICE CAP_NET_RAW
 NoNewPrivileges=true
 ExecStart=udp2raw --conf-file /etc/udp2raw/udp2raw.conf
