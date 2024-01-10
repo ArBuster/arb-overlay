@@ -9,7 +9,7 @@ Type=simple
 CapabilityBoundingSet=CAP_NET_BIND_SERVICE CAP_NET_ADMIN
 NoNewPrivileges=true
 ExecStart=v2ray run -format=json -c /etc/v2ray/%i.conf
-Restart=on-failure
+Restart=always
 RestartSec=10s
 
 [Install]
