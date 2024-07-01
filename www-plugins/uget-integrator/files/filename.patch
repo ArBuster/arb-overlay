@@ -1,5 +1,5 @@
---- /uget-integrator-1.0.0/bin/uget-integrator
-+++ /uget-integrator-1.0.0/bin/uget-integrator
+--- a/bin/uget-integrator
++++ b/bin/uget-integrator
 @@ -75,7 +75,8 @@
      elif 'www.youtube.com/watch' in url:
          fileName = ''

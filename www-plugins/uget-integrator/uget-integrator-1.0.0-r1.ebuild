@@ -1,9 +1,9 @@
 # Copyright 1999-2019 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=8
 
-inherit eutils multilib
+inherit multilib
 
 DESCRIPTION="Native messaging host to integrate uGet Download Manager with web browsers"
 HOMEPAGE="https://github.com/ugetdm/${PN}"
@@ -21,7 +21,7 @@ RDEPEND="
 "
 
 src_prepare() {
-    epatch "${FILESDIR}/filename.patch"
+    eapply "${FILESDIR}/filename.patch"
 	eapply_user
 }
 
