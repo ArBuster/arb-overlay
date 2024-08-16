@@ -23,20 +23,25 @@ REQUIRED_USE="
 "
 
 DEPEND="
-	x11-libs/gtk+:3
-	net-misc/curl:=
+	>=app-accessibility/at-spi2-core-2.46.0
+	dev-libs/glib:2
 	dev-libs/jansson:=
+	dev-libs/libdispatch
+	net-misc/curl
+	x11-libs/cairo
+	x11-libs/gdk-pixbuf:2
+	x11-libs/gtk+:3
+	x11-libs/libX11
+	x11-libs/pango
 	aac? ( media-libs/faad2 )
 	alac? ( media-sound/alac_decoder )
 	alsa? ( media-libs/alsa-lib )
 	cdda? (
 		dev-libs/libcdio:=
 		media-libs/libcddb
-		dev-libs/libcdio-paranoia:=
+		media-sound/cdparanoia
 	)
-	cover? (
-		media-libs/imlib2[jpeg,png]
-	)
+	cover? ( media-libs/imlib2[jpeg,png] )
 	dts? ( media-libs/libdca )
 	ffmpeg? ( media-video/ffmpeg:= )
 	flac? (
@@ -48,29 +53,28 @@ DEPEND="
 	mp3? ( media-sound/mpg123 )
 	musepack? ( media-sound/musepack-tools )
 	nls? ( virtual/libintl )
-	notify? (
-		sys-apps/dbus
-	)
+	notify? ( sys-apps/dbus )
 	opus? ( media-libs/opusfile )
 	pulseaudio? ( media-libs/libpulse )
-	pipewire? ( media-video/pipewire )
+	pipewire? ( media-video/pipewire:= )
 	tta? ( media-sound/ttaenc )
 	vorbis? ( media-libs/libvorbis )
 	wavpack? ( media-sound/wavpack )
-	dev-libs/libdispatch:=
 "
 
 RDEPEND="${DEPEND}"
 BDEPEND="
 	dev-util/intltool
-	sys-devel/gettext
 	sys-devel/clang
+	>=sys-devel/gettext-0.21
 	sys-devel/llvm
 	virtual/pkgconfig
 "
 
 PATCHES=(
-	"${FILESDIR}/deadbeef-1.9.2-drop-Werror.patch"
+	"${FILESDIR}"/${PN}-1.9.6-drop-Werror.patch
+	"${FILESDIR}"/${PN}-1.9.6-update-gettext.patch
+	"${FILESDIR}"/${PN}-1.9.6-fix-desktop-launcher.patch
 )
 
 src_prepare() {
@@ -81,9 +85,10 @@ src_prepare() {
 	}
 
 	drop_and_stub() {
-		rm -rf "${1}"
-		mkdir "${1}"
-		cat > "${1}/Makefile.in" <<-EOF
+		einfo drop_and_stub "${1}"
+		rm -r "${1}" || die
+		mkdir "${1}" || die
+		cat > "${1}/Makefile.in" <<-EOF || die
 			all: nothing
 			install: nothing
 			nothing:
@@ -96,7 +101,7 @@ src_prepare() {
 	eautoreconf
 
 	# Get rid of bundled gettext. (Avoid build failures with musl)
-	use elibc_musl || drop_and_stub "${S}/intl"
+	drop_and_stub "${S}/intl"
 
 	# Plugins that are undesired for whatever reason, candidates for unbundling and such.
 	for i in adplug dumb mms gme mono2stereo psf shn sid soundtouch; do
@@ -148,7 +153,6 @@ src_configure () {
 		"$(use_enable mp3 libmpg123)"
 		"$(use_enable nls)"
 		"$(use_enable vorbis)"
-		"$(use_enable threads)"
 		"$(use_enable flac)"
 		"$(use_enable supereq)"
 		"$(use_enable cdda)"
@@ -176,6 +180,7 @@ src_configure () {
 		"$(use_enable mac ffap)"
 		"$(use_enable tta)"
 		"$(use_enable wma)"
+		"$(use_enable threads threads=posix)"
 
 		"--enable-gtk3"
 		"--enable-vfs-curl"
@@ -191,4 +196,7 @@ src_install() {
 	default
 
 	find "${ED}" -name '*.la' -delete || die
+
+	# if compressed, help doesn't work
+	docompress -x /usr/share/doc/${PF}
 }
