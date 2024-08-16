@@ -16,7 +16,7 @@ LICENSE="
 "
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="aac alac alsa cdda converter cover dts ffmpeg flac +hotkeys lastfm libretro libsamplerate mac mp3 musepack nls notify +nullout opus oss pulseaudio pipewire sc68 shellexec +supereq threads tta vorbis wavpack wma zip"
+IUSE="aac alac alsa cdda converter cover dts ffmpeg flac +hotkeys lastfm libretro libsamplerate mac mp3 +mpris2 musepack nls notify +nullout opus oss pulseaudio pipewire sc68 shellexec +supereq threads tta vorbis wavpack wma zip"
 
 REQUIRED_USE="
 	|| ( alsa oss pulseaudio pipewire nullout )
@@ -51,6 +51,7 @@ DEPEND="
 	libsamplerate? ( media-libs/libsamplerate )
 	mac? ( media-sound/mac )
 	mp3? ( media-sound/mpg123-base )
+	mpris2? ( media-sound/deadbeef-mpris2-plugin )
 	musepack? ( media-sound/musepack-tools )
 	nls? ( virtual/libintl )
 	notify? ( sys-apps/dbus )
