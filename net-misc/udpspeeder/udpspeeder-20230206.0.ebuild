@@ -40,8 +40,10 @@ src_compile() {
 src_install() {
 	newbin speederv2 ${PN}
 	systemd_dounit "${FILESDIR}/${PN}.service"
+	systemd_dounit "${FILESDIR}/${PN}_ipv6.service"
 	insinto "/etc/${PN}"
 	doins ${FILESDIR}/${PN}.conf
+	newins ${FILESDIR}/${PN}.conf ${PN}_ipv6.conf
 }
 
 pkg_postinst() {
