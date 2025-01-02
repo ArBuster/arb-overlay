@@ -40,10 +40,12 @@ src_compile() {
 src_install() {
 	insinto "/etc/${PN}"
 	newins example.conf ${PN}.conf
+	newins example.conf ${PN}_ipv6.conf
 	
 	dobin udp2raw
 	
 	systemd_dounit "${FILESDIR}/${PN}.service"
+	systemd_dounit "${FILESDIR}/${PN}_ipv6.service"
 }
 
 pkg_postinst() {
