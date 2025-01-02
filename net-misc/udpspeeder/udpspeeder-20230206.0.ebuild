@@ -39,8 +39,9 @@ src_compile() {
 
 src_install() {
 	newbin speederv2 ${PN}
-	
 	systemd_dounit "${FILESDIR}/${PN}.service"
+	insinto "/etc/${PN}"
+	doins ${FILESDIR}/${PN}.conf
 }
 
 pkg_postinst() {
