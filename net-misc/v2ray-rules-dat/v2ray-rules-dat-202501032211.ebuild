@@ -11,7 +11,7 @@ https://github.com/Loyalsoldier/v2ray-rules-dat/releases/download/${PV}/geosite.
 "
 RESTRICT="mirror binchecks strip"
 
-LICENSE="GPL-3.0"
+LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="amd64"
 IUSE=""
