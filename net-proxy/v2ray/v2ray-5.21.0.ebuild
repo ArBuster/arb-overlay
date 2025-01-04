@@ -9,10 +9,9 @@ go-module_set_globals GOPROXY="sock5://[::]:30000"
 
 DESCRIPTION="A platform for building proxies to bypass network restrictions."
 HOMEPAGE="https://www.v2ray.com/"
-SRC_URI="
-https://github.com/v2fly/v2ray-core/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
-https://github.com/v2fly/v2ray-core/archive/refs/tags/${P}-vendor.tar.xz
-"
+SRC_URI="https://github.com/v2fly/v2ray-core/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+#https://raw.githubusercontent.com/ArBuster/arb-overlay/refs/heads/master/net-proxy/v2ray/files/${P}-vendor.tar.xz
+
 RESTRICT="mirror binchecks strip"
 
 LICENSE="MIT"
@@ -27,6 +26,11 @@ net-misc/v2ray-rules-dat
 RDEPEND="${DEPEND}"
 
 S="${WORKDIR}/v2ray-core-${PV}"
+
+src_unpack() {
+	unpack ${P}.tar.gz
+	unpack ${FILESDIR}/${P}-vendor.tar.xz
+}
 
 src_compile() {
 	echo "replace gvisor.dev/gvisor v0.0.0-20231020174304-b8a429915ff1 => ../gvisor-b8a429915ff1a5747ed6608bd30cd3a734eb6aaf" >> go.mod
