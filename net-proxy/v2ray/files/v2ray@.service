@@ -8,6 +8,7 @@ Wants=network-online.target
 Type=simple
 CapabilityBoundingSet=CAP_NET_BIND_SERVICE CAP_NET_ADMIN
 NoNewPrivileges=true
+Environment="V2RAY_LOCATION_ASSET=/usr/share/v2ray"
 ExecStart=v2ray run -format=json -c /etc/v2ray/%i.conf
 Restart=always
 RestartSec=10s
