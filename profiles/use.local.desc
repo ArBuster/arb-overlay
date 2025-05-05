@@ -2,51 +2,29 @@
 # your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using egencache *
 
-media-sound/deadbeef:aac - Advanced Audio Coding (AAC) plugin
-media-sound/deadbeef:adplug - Adplug plugin
-media-sound/deadbeef:alac - Apple Lossless Audio Codec (ALAC) plugin
-media-sound/deadbeef:cdda - Compact Disc Digital Audio (CDDA) plugin
-media-sound/deadbeef:converter - Support for converting media files
-media-sound/deadbeef:cover - Album artwork plugin
-media-sound/deadbeef:cover-imlib2 - Album artwork (with support for imlib2) plugin
-media-sound/deadbeef:cover-network - Plugin for downloading album artwork from internet
-media-sound/deadbeef:curl - cURL plugin
-media-sound/deadbeef:dts - Digital Theater System (DTS) plugin
-media-sound/deadbeef:dumb - Tracker music (MOD, S3M, XM, IT, STM, 669, PTM, PSM, MTM, DSM, ASYLUM AMF, UMX, J2B) plugin
-media-sound/deadbeef:equalizer - Equalizer plugin
-media-sound/deadbeef:ffmpeg - FFmpeg plugin
-media-sound/deadbeef:flac - Free Lossless Audio Codec (FLAC) plugin
-media-sound/deadbeef:gme - Game Music Emu (NSF, AY and other formats) plugin
-media-sound/deadbeef:gtk2 - GTK2 based user interface
-media-sound/deadbeef:gtk3 - GTK3 based user interface
-media-sound/deadbeef:hotkeys - Hotkeys support plugin
-media-sound/deadbeef:lastfm - Last.fm scrobbling plugin
-media-sound/deadbeef:libav - Libav plugin
-media-sound/deadbeef:libnotify - Notification daemon support plugin
-media-sound/deadbeef:libsamplerate - Sample rate conversion plugin
-media-sound/deadbeef:m3u - m3u playlist plugin
-media-sound/deadbeef:mac - Monkey's Audio plugin
-media-sound/deadbeef:mad - MPEG-1/2/2.5 Layer 3 (MP3) support through mad/libmad
-media-sound/deadbeef:midi - midi support (via timidity) plugin
-media-sound/deadbeef:mms - Microsoft Media Server (MMS) plugin
-media-sound/deadbeef:mono2stereo - mono2stereo plugin
-media-sound/deadbeef:mp3 - Add support for reading mp3 files
+app-misc/freemind:groovy - Build plugin for scripting via Groovy
+app-misc/freemind:latex - Build plugin for inserting mathematical formulas in LaTeX syntax
+app-misc/freemind:pdf - Build plugin for exporting mindmaps to SVG and PDF
+app-misc/freemind:svg - Build plugin for exporting mindmaps to SVG and PDF
+media-sound/deadbeef:alac - Add support for Apple Lossless Audio Codec files
+media-sound/deadbeef:converter - File format converter
+media-sound/deadbeef:cover - Support for cover art
+media-sound/deadbeef:hotkeys - Keyboard shortcuts support
+media-sound/deadbeef:lastfm - last.fm/AudioScrobbler protocol support
+media-sound/deadbeef:libretro - libretro resampling plugin
+media-sound/deadbeef:libsamplerate - Support the Secret Rabbit Code resampler
+media-sound/deadbeef:mac - Add support for decoding Monkey's Audio files
 media-sound/deadbeef:mpris2 - Install media-sound/deadbeef-mpris2-plugin
-media-sound/deadbeef:nls - Native Language Support (NLS)
-media-sound/deadbeef:nullout - NULL output plugin
-media-sound/deadbeef:oss - Open Sound System (OSS) output plugin
-media-sound/deadbeef:playlist-browser - Playlist browser user interface plugin
-media-sound/deadbeef:psf - AOSDK-based PSF(QSF,SSF,DSF) plugin
-media-sound/deadbeef:pulseaudio - PulseAudio output plugin
-media-sound/deadbeef:sc68 - Atari ST and Amiga music plugin
-media-sound/deadbeef:shell-exec - Support for running shell commands
-media-sound/deadbeef:shn - Shorten (SHN) plugin
-media-sound/deadbeef:sid - Commodore64 SID music player plugin
-media-sound/deadbeef:sndfile - PCM wave support (via libsndfile) plugin
-media-sound/deadbeef:tta - True Audio TTA plugin
-media-sound/deadbeef:unity - Gnome Unity support
-media-sound/deadbeef:vorbis - Ogg Vorbis plugin
-media-sound/deadbeef:vtx - Libayemy VTX ZX-Spectrum music player plugin
-media-sound/deadbeef:wavpack - WavPack plugin
-media-sound/deadbeef:wma - Windows media audio plugin
-media-sound/deadbeef:zip - vfs_zip plugin
+media-sound/deadbeef:notify - Desktop notifications support
+media-sound/deadbeef:nullout - Dummy output driver
+media-sound/deadbeef:pipewire - Pipewire output plugin
+media-sound/deadbeef:sc68 - Atari ST and Amiga music player
+media-sound/deadbeef:shellexec - Define custom shell commands that can be called on tracks
+media-sound/deadbeef:supereq - Enable equalizer
+media-sound/deadbeef:tta - Add support for decoding True Audio input files
+media-sound/deadbeef:wma - Add support for decoding Windows Media Audio files
+net-p2p/qbittorrent-enhanced:webui - Install qBittorrent Web UI (qbittorrent-nox) and systemd/OpenRC service
+www-plugins/uget-integrator:chrome - install uget-integrator for chrome
+www-plugins/uget-integrator:chromium - install uget-integrator for chromium
+www-plugins/uget-integrator:firefox - install uget-integrator for firefox
+www-plugins/uget-integrator:opera - install uget-integrator for opera

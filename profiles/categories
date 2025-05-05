@@ -9,6 +9,7 @@ media-plugins
 media-sound
 net-libs
 net-misc
+net-p2p
 net-proxy
 net-wireless
 sys-firmware
