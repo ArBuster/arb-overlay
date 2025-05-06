@@ -3,7 +3,7 @@ Description=PeerBanHelper Service
 After=network.target
 
 [Service]
-User=peerbanhelper
+Type=simple
 WorkingDirectory=/opt/peerbanhelper
 ExecStart=/usr/bin/peerbanhelper
 SuccessExitStatus=143
@@ -12,4 +12,5 @@ Restart=on-failure
 RestartSec=30s
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
+#WantedBy=multi-user.target
