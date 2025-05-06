@@ -3,12 +3,13 @@ Description=PeerBanHelper Service
 After=network.target
 
 [Service]
-User=peerbanhelper
+#User=peerbanhelper
 WorkingDirectory=/opt/peerbanhelper
 ExecStart=/usr/bin/peerbanhelper
 SuccessExitStatus=143
 AmbientCapabilities=CAP_NET_ADMIN
 Restart=on-failure
+RestartSec=30s
 
 [Install]
 WantedBy=multi-user.target

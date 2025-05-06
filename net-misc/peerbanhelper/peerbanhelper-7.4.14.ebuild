@@ -32,5 +32,5 @@ src_install(){
 
     insinto "/etc/peerbanhelper"
 	doins ${FILESDIR}/{config,profile}.yml
-	systemd_dounit "${FILESDIR}/peerbanhelper.service"
+	systemd_douserunit "${FILESDIR}/peerbanhelper.service"
 }
