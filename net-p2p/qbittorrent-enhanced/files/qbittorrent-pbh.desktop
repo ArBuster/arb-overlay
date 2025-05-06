@@ -1,7 +1,7 @@
 [Desktop Entry]
 Categories=Network;FileTransfer;P2P;Qt;
 Exec=qbittorrent-pbh %U
-GenericName=BitTorrent client
+GenericName=qBittorrent with PeerBanHelper
 Comment=start qBittorrent and PeerBanHelper at the same time
 Icon=qbittorrent
 MimeType=application/x-bittorrent;x-scheme-handler/magnet;
