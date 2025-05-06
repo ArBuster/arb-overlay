@@ -16,11 +16,12 @@ KEYWORDS="amd64"
 
 LICENSE="GPL-2+ GPL-3+"
 SLOT="0"
-IUSE="+dbus +gui systemd test webui"
+IUSE="+dbus +gui pbh systemd test webui"
 RESTRICT="mirror !test? ( test )"
 REQUIRED_USE="
 	|| ( gui webui )
 	dbus? ( gui )
+	pbh? ( webui )
 "
 
 RDEPEND="
@@ -33,6 +34,7 @@ RDEPEND="
 		>=dev-qt/qtbase-6.5:6[dbus?,gui,widgets]
 		>=dev-qt/qtsvg-6.5:6
 	)
+	pbh? ( net-misc/peerbanhelper )
 	webui? (
 		acct-group/qbittorrent
 		acct-user/qbittorrent

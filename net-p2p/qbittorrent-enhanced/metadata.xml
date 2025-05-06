@@ -10,6 +10,9 @@
 		<name>Filip Kobierski</name>
 	</maintainer>
 	<use>
+		<flag name="pbh">
+			Install PeerBanHelper
+		</flag>
 		<flag name="webui">
 			Install qBittorrent Web UI (qbittorrent-nox) and systemd/OpenRC service
 		</flag>

@@ -23,6 +23,7 @@ media-sound/deadbeef:shellexec - Define custom shell commands that can be called
 media-sound/deadbeef:supereq - Enable equalizer
 media-sound/deadbeef:tta - Add support for decoding True Audio input files
 media-sound/deadbeef:wma - Add support for decoding Windows Media Audio files
+net-p2p/qbittorrent-enhanced:pbh - Install PeerBanHelper
 net-p2p/qbittorrent-enhanced:webui - Install qBittorrent Web UI (qbittorrent-nox) and systemd/OpenRC service
 www-plugins/uget-integrator:chrome - install uget-integrator for chrome
 www-plugins/uget-integrator:chromium - install uget-integrator for chromium
