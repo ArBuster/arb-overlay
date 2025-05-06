@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/PBH-BTN/PeerBanHelper"
 SRC_URI="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v${PV}/PeerBanHelper_${PV}.zip -> ${P}.zip"
 RESTRICT="mirror"
 
-LICENSE="GPL-3.0"
+LICENSE="GPL-3"
 
 SLOT="0"
 KEYWORDS="amd64"
