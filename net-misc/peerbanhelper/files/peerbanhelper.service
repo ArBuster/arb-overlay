@@ -7,10 +7,10 @@ Type=simple
 WorkingDirectory=/opt/peerbanhelper
 ExecStart=/usr/bin/peerbanhelper
 SuccessExitStatus=143
-AmbientCapabilities=CAP_NET_ADMIN
+#AmbientCapabilities=CAP_NET_ADMIN
 Restart=on-failure
 RestartSec=30s
 
 [Install]
-WantedBy=default.target
-#WantedBy=multi-user.target
+#WantedBy=default.target
+WantedBy=multi-user.target
