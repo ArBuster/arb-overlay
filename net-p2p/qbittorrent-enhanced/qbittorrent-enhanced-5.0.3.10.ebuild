@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit cmake edo multibuild optfeature systemd xdg
+inherit cmake desktop edo multibuild optfeature systemd xdg
 
 DESCRIPTION="BitTorrent client in C++ and Qt"
 HOMEPAGE="https://www.qbittorrent.org"
@@ -123,6 +123,11 @@ src_test() {
 src_install() {
 	multibuild_foreach_variant cmake_src_install
 	einstalldocs
+
+	if use gui && use pbh; then
+		dobin "${FILESDIR}/qbittorrent-pbh"
+		domenu "${FILESDIR}/qbittorrent-pbh.desktop"
+	fi
 
 	if use webui; then
 		newconfd "${FILESDIR}/${PN}.confd" "${PN}"

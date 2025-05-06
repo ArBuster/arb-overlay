@@ -1,0 +1,9 @@
+#!/bin/sh
+
+running=$(ps -ef | grep "/bin/sh $0" | grep -v grep | wc -l)
+
+if [ $running -eq 2 ]; then
+    systemctl --user start peerbanhelper.service
+    qbittorrent $1
+    systemctl --user stop peerbanhelper.service
+fi

@@ -1,0 +1,14 @@
+[Desktop Entry]
+Categories=Network;FileTransfer;P2P;Qt;
+Exec=qbittorrent-pbh %U
+GenericName=BitTorrent client
+Comment=start qBittorrent and PeerBanHelper at the same time
+Icon=qbittorrent
+MimeType=application/x-bittorrent;x-scheme-handler/magnet;
+Name=qBittorrent
+Terminal=false
+Type=Application
+StartupNotify=false
+StartupWMClass=qbittorrent
+Keywords=bittorrent;torrent;magnet;download;p2p;
+SingleMainWindow=true
