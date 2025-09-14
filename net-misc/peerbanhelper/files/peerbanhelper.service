@@ -7,7 +7,7 @@ Type=exec
 WorkingDirectory=/opt/peerbanhelper
 ExecStart=/usr/bin/peerbanhelper
 SuccessExitStatus=143
-Restart=on-failure
+Restart=always
 RestartSec=20s
 
 [Install]
