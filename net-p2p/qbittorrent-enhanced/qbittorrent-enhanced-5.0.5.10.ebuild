@@ -34,7 +34,10 @@ RDEPEND="
 		>=dev-qt/qtbase-6.5:6[dbus?,gui,widgets]
 		>=dev-qt/qtsvg-6.5:6
 	)
-	pbh? ( net-misc/peerbanhelper )
+	pbh? (
+		net-misc/peerbanhelper
+		net-analyzer/netcat
+	)
 	webui? (
 		acct-group/qbittorrent
 		acct-user/qbittorrent

@@ -26,9 +26,9 @@ src_install(){
     insinto "/opt/${PN}"
     doins -r *
 
-    doins "${FILESDIR}/peerbanhelper.sh"
-    fperms +x "/opt/${PN}/peerbanhelper.sh"
-    dosym "/opt/${PN}/peerbanhelper.sh" "/usr/bin/peerbanhelper"
+    doins "${FILESDIR}/peerbanhelper.py"
+    fperms +x "/opt/${PN}/peerbanhelper.py"
+    dosym "/opt/${PN}/peerbanhelper.py" "/usr/bin/peerbanhelper"
 
     insinto "/etc/peerbanhelper"
 	doins ${FILESDIR}/{config,profile}.yml
