@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit systemd
+inherit systemd desktop
 
 DESCRIPTION="Automatically block unwanted, leeches and abnormal BT peers with support for customized and cloud rules."
 HOMEPAGE="https://github.com/PBH-BTN/PeerBanHelper"
@@ -18,7 +18,11 @@ KEYWORDS="amd64"
 IUSE=""
 
 DEPEND=""
-RDEPEND=">=virtual/jre-21"
+RDEPEND="
+    >=virtual/jre-21
+    net-p2p/qbittorrent[webui]
+    net-analyzer/netcat
+"
 
 S="${WORKDIR}/PeerBanHelper"
 
@@ -33,4 +37,7 @@ src_install(){
     insinto "/etc/peerbanhelper"
 	doins ${FILESDIR}/{config,profile}.yml
 	systemd_douserunit "${FILESDIR}/peerbanhelper.service"
+
+	dobin "${FILESDIR}/qbittorrent-pbh"
+    domenu "${FILESDIR}/qbittorrent-pbh.desktop"
 }
