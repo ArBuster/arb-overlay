@@ -36,7 +36,6 @@ def test_run() -> tuple:
     ps_ret = subprocess.run(
         cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, encoding="utf8")
 
-    a = tuple(int(pid) for pid in ps_ret.stdout.split('\n') if pid.isdigit())
     return tuple(int(pid) for pid in ps_ret.stdout.split('\n') if pid.isdigit())
 
 
@@ -111,7 +110,12 @@ def start_task(log_level=logging.INFO) -> bool:
         logger.info("peerbanhelper start success.")
     else:
         if Global_Options["verbose"]:
-            logger.critical("peerbanhelper start failed. subprocess.run stdout: %s\n" % proc.stdout)
+            try:
+                outs, _ = proc.communicate(timeout=1)
+            except subprocess.TimeoutExpired:
+                proc.kill()
+                outs, _ = proc.communicate()
+            logger.critical("peerbanhelper start failed. subprocess.run stdout: %s\n" % outs)
         else:
             print("peerbanhelper start failed. use --verbose to get more information\n")
 
