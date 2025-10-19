@@ -21,7 +21,6 @@ DEPEND=""
 RDEPEND="
     >=virtual/jre-21
     net-p2p/qbittorrent[webui]
-    net-analyzer/netcat
 "
 
 S="${WORKDIR}/PeerBanHelper"

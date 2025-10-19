@@ -6,6 +6,7 @@ import subprocess
 import logging
 from time import sleep
 import signal
+import socket
 
 logger = logging.getLogger("peerbanhelper")
 
@@ -14,7 +15,7 @@ Global_Options = {
     "verbose": False
 }
 
-PORT="9898"
+PORT=9898
 MAX_SLEEP_TIME=5
 DATA_DIR=os.path.join(os.environ.get("HOME"), R".peerbanhelper")
 JAR_PATH=R"/opt/peerbanhelper/PeerBanHelper.jar"
@@ -124,11 +125,13 @@ def run_as_daemon():
         sys.exit(0)
 
     def test_port() -> bool:
-        cmd = ("nc", "-zvn", "127.0.0.1", PORT)
-        ps_ret = subprocess.run(
-            cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, encoding="utf8")
-
-        return True if "open" in ps_ret.stdout else False
+        ret = False
+        try:
+            with socket.create_connection(("127.0.0.1", PORT), timeout=3):
+                ret = True
+        except (OSError, TimeoutError):
+            pass
+        return ret
 
     print("peerbanhelper running as daemon.")
     signal.signal(signal.SIGTERM, handler)
