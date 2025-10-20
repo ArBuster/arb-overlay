@@ -133,7 +133,7 @@ def run_as_daemon():
         try:
             with socket.create_connection(("127.0.0.1", PORT), timeout=3):
                 ret = True
-        except (OSError, TimeoutError):
+        except Exception:
             pass
         return ret
 
