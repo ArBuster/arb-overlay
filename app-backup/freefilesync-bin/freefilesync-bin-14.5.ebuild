@@ -42,9 +42,10 @@ src_install(){
     dosym "/opt/${MY_PN}/FreeFileSync" "/usr/bin/${FFS_PN}"
     dosym "/opt/${MY_PN}/RealTimeSync" "/usr/bin/${RTS_PN}"
 
-    #fperms 777 "/opt/${MY_PN}"
-    #fperms +x "/opt/${MY_PN}/FreeFileSync"
-    #fperms +x "/opt/${MY_PN}/RealTimeSync"
+    fperms +x "/opt/${MY_PN}/FreeFileSync"
+    fperms +x "/opt/${MY_PN}/RealTimeSync"
+    fperms +x "/opt/${MY_PN}/Bin/FreeFileSync_x86_64"
+    fperms +x "/opt/${MY_PN}/Bin/RealTimeSync_x86_64"
 
     make_desktop_entry "${FFS_PN}" "FreeFileSync" "FreeFileSync" "Utility;Archiving" "GenericName=File synchronization tool"
     doicon "${FILESDIR}/FreeFileSync.png"
