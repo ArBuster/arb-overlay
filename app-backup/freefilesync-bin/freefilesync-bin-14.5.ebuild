@@ -7,7 +7,7 @@ inherit desktop
 
 DESCRIPTION="FreeFileSync is a folder comparison and synchronization tool"
 HOMEPAGE="https://www.freefilesync.org"
-SRC_URI="https://github.com/ArBuster/freefilesync-bin/archive/refs/tags/${PV}.zip -> ${P}.zip"
+SRC_URI="https://github.com/ArBuster/freefilesync-bin/releases/download/${PV}/${P}-linux-64.tar.xz -> ${P}.tar.xz"
 RESTRICT="mirror strip"
 
 LICENSE="GPL-3"
@@ -33,9 +33,9 @@ MY_PN="FreeFileSync"
 FFS_PN="freefilesync"
 RTS_PN="realtimesync"
 
-src_install(){
-    echo ${S}
+S="${WORKDIR}/${MY_PN}"
 
+src_install(){
     insinto "/opt/${MY_PN}"
     doins -r *
 
