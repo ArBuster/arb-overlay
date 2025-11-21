@@ -141,7 +141,7 @@ def run_as_daemon():
     signal.signal(signal.SIGTERM, handler)
     signal.signal(signal.SIGINT, handler)
     while True:
-        sleep(60)
+        sleep(180)
         if not test_port():
             start_task(logging.WARN)
 
