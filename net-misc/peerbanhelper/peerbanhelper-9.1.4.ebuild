@@ -33,10 +33,9 @@ src_install(){
     fperms +x "/opt/${PN}/peerbanhelper.py"
     dosym "/opt/${PN}/peerbanhelper.py" "/usr/bin/peerbanhelper"
 
-    insinto "/etc/peerbanhelper"
-	doins ${FILESDIR}/{config,profile}.yml
 	systemd_douserunit "${FILESDIR}/peerbanhelper.service"
 
+	dobin "${FILESDIR}/pbh-init"
 	dobin "${FILESDIR}/qbittorrent-pbh"
     domenu "${FILESDIR}/qbittorrent-pbh.desktop"
 }
