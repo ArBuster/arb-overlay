@@ -3,4 +3,4 @@
 DATA_DIR="${HOME}/.peerbanhelper"
 JAR_PATH="/opt/peerbanhelper/PeerBanHelper.jar"
 
-java "-Dpbh.datadir=${DATA_DIR}/data -Dpbh.logsdir=${DATA_DIR}/log -Dpbh.log.level=WARN -Xmx512M -XX:+UseG1GC -XX:+UseStringDeduplication -XX:+ShrinkHeapInSteps -jar ${JAR_PATH} nogui"
+java -Dpbh.datadir=${DATA_DIR}/data -Dpbh.logsdir=${DATA_DIR}/log -Dpbh.log.level=WARN -Xmx512M -XX:+UseG1GC -XX:+UseStringDeduplication -XX:+ShrinkHeapInSteps -jar ${JAR_PATH} nogui
