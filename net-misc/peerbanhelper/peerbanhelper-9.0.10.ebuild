@@ -19,7 +19,7 @@ IUSE=""
 
 DEPEND=""
 RDEPEND="
-    >=virtual/jre-25
+    >=virtual/jre-21
     net-p2p/qbittorrent[webui]
 "
 
