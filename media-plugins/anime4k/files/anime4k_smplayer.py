@@ -68,7 +68,7 @@ def check_video_output_driver():
     config = configparser.ConfigParser()
     config.read(SMPLAYER_INI_PATH)
     vo = config.get("%General", R"driver\vo")
-    if vo != "gpu" or vo != "gpu-next":
+    if vo != "gpu" and vo != "gpu-next":
         with open(SMPLAYER_INI_PATH, "r") as f:
             config = f.read()
 
