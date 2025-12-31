@@ -64,6 +64,25 @@ def print_current_mode(mode_num: int):
     print(f"\ncurrent_mode: {[mode_num]}  {MODE_CONFIG[mode_num][0]}")
 
 
+def check_video_output_driver():
+    config = configparser.ConfigParser()
+    config.read(SMPLAYER_INI_PATH)
+    vo = config.get("%General", R"driver\vo")
+    if vo != "gpu" or vo != "gpu-next":
+        with open(SMPLAYER_INI_PATH, "r") as f:
+            config = f.read()
+
+        vo = re.search(R"driver\\vo=(.*)", config)
+        start_pos = vo.start() + len(R"driver\vo=")
+        end_pos = vo.end()
+        new_conf = config[:start_pos] + "gpu" + config[end_pos:]
+
+        with open(SMPLAYER_INI_PATH, "w") as f:
+            f.write(new_conf)
+
+        print("已将视频输出驱动设置为gpu")
+
+
 def get_arv_setting(argv: list[str]):
     if "set" in argv and argv[-1].isdigit() and int(argv[-1]) < len(MODE_CONFIG):
         return int(argv[-1])
@@ -123,5 +142,6 @@ if __name__ == "__main__":
         current_mode = get_current_mode()
         if new_mode != current_mode:
             set_mode(new_mode)
+            check_video_output_driver()
             current_mode = new_mode
         print_current_mode(current_mode)
