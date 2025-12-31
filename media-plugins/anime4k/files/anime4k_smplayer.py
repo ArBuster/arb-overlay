@@ -11,27 +11,27 @@ MODE_CONFIG = (
     ("Mode off",),
     (
         "Mode A (HQ/1080p)",
-        Rf"{GLSL_PATH}/Anime4K_Clamp_Highlights.glsl,{GLSL_PATH}/Anime4K_Restore_CNN_VL.glsl,{GLSL_PATH}/Anime4K_Upscale_CNN_x2_VL.glsl,{GLSL_PATH}/Anime4K_AutoDownscalePre_x2.glsl,{GLSL_PATH}/Anime4K_AutoDownscalePre_x4.glsl,{GLSL_PATH}/Anime4K_Upscale_CNN_x2_M.glsl"
+        Rf"{GLSL_PATH}/Anime4K_Clamp_Highlights.glsl:{GLSL_PATH}/Anime4K_Restore_CNN_VL.glsl:{GLSL_PATH}/Anime4K_Upscale_CNN_x2_VL.glsl:{GLSL_PATH}/Anime4K_AutoDownscalePre_x2.glsl:{GLSL_PATH}/Anime4K_AutoDownscalePre_x4.glsl:{GLSL_PATH}/Anime4K_Upscale_CNN_x2_M.glsl"
     ),
     (
         "Mode A+A (HQ/1080p)",
-        Rf"{GLSL_PATH}/Anime4K_Clamp_Highlights.glsl,{GLSL_PATH}/Anime4K_Restore_CNN_VL.glsl,{GLSL_PATH}/Anime4K_Upscale_CNN_x2_VL.glsl,{GLSL_PATH}/Anime4K_Restore_CNN_M.glsl,{GLSL_PATH}/Anime4K_AutoDownscalePre_x2.glsl,{GLSL_PATH}/Anime4K_AutoDownscalePre_x4.glsl,{GLSL_PATH}/Anime4K_Upscale_CNN_x2_M.glsl"
+        Rf"{GLSL_PATH}/Anime4K_Clamp_Highlights.glsl:{GLSL_PATH}/Anime4K_Restore_CNN_VL.glsl:{GLSL_PATH}/Anime4K_Upscale_CNN_x2_VL.glsl:{GLSL_PATH}/Anime4K_Restore_CNN_M.glsl:{GLSL_PATH}/Anime4K_AutoDownscalePre_x2.glsl:{GLSL_PATH}/Anime4K_AutoDownscalePre_x4.glsl:{GLSL_PATH}/Anime4K_Upscale_CNN_x2_M.glsl"
     ),
     (
         "Mode B (HQ/720p)",
-        Rf"{GLSL_PATH}/Anime4K_Clamp_Highlights.glsl,{GLSL_PATH}/Anime4K_Restore_CNN_Soft_VL.glsl,{GLSL_PATH}/Anime4K_Upscale_CNN_x2_VL.glsl,{GLSL_PATH}/Anime4K_AutoDownscalePre_x2.glsl,{GLSL_PATH}/Anime4K_AutoDownscalePre_x4.glsl,{GLSL_PATH}/Anime4K_Upscale_CNN_x2_M.glsl"
+        Rf"{GLSL_PATH}/Anime4K_Clamp_Highlights.glsl:{GLSL_PATH}/Anime4K_Restore_CNN_Soft_VL.glsl:{GLSL_PATH}/Anime4K_Upscale_CNN_x2_VL.glsl:{GLSL_PATH}/Anime4K_AutoDownscalePre_x2.glsl:{GLSL_PATH}/Anime4K_AutoDownscalePre_x4.glsl:{GLSL_PATH}/Anime4K_Upscale_CNN_x2_M.glsl"
     ),
     (
         "Mode B+B (HQ/720p)",
-        Rf"{GLSL_PATH}/Anime4K_Clamp_Highlights.glsl,{GLSL_PATH}/Anime4K_Restore_CNN_Soft_VL.glsl,{GLSL_PATH}/Anime4K_Upscale_CNN_x2_VL.glsl,{GLSL_PATH}/Anime4K_AutoDownscalePre_x2.glsl,{GLSL_PATH}/Anime4K_AutoDownscalePre_x4.glsl,{GLSL_PATH}/Anime4K_Restore_CNN_Soft_M.glsl,{GLSL_PATH}/Anime4K_Upscale_CNN_x2_M.glsl"
+        Rf"{GLSL_PATH}/Anime4K_Clamp_Highlights.glsl:{GLSL_PATH}/Anime4K_Restore_CNN_Soft_VL.glsl:{GLSL_PATH}/Anime4K_Upscale_CNN_x2_VL.glsl:{GLSL_PATH}/Anime4K_AutoDownscalePre_x2.glsl:{GLSL_PATH}/Anime4K_AutoDownscalePre_x4.glsl:{GLSL_PATH}/Anime4K_Restore_CNN_Soft_M.glsl:{GLSL_PATH}/Anime4K_Upscale_CNN_x2_M.glsl"
     ),
     (
         "Mode C (HQ/480p)",
-        Rf"{GLSL_PATH}/Anime4K_Clamp_Highlights.glsl,{GLSL_PATH}/Anime4K_Upscale_Denoise_CNN_x2_VL.glsl,{GLSL_PATH}/Anime4K_AutoDownscalePre_x2.glsl,{GLSL_PATH}/Anime4K_AutoDownscalePre_x4.glsl,{GLSL_PATH}/Anime4K_Upscale_CNN_x2_M.glsl"
+        Rf"{GLSL_PATH}/Anime4K_Clamp_Highlights.glsl:{GLSL_PATH}/Anime4K_Upscale_Denoise_CNN_x2_VL.glsl:{GLSL_PATH}/Anime4K_AutoDownscalePre_x2.glsl:{GLSL_PATH}/Anime4K_AutoDownscalePre_x4.glsl:{GLSL_PATH}/Anime4K_Upscale_CNN_x2_M.glsl"
     ),
     (
         "Mode C+A (HQ/480p)",
-        Rf"{GLSL_PATH}/Anime4K_Clamp_Highlights.glsl,{GLSL_PATH}/Anime4K_Upscale_Denoise_CNN_x2_VL.glsl,{GLSL_PATH}/Anime4K_AutoDownscalePre_x2.glsl,{GLSL_PATH}/Anime4K_AutoDownscalePre_x4.glsl,{GLSL_PATH}/Anime4K_Restore_CNN_M.glsl,{GLSL_PATH}/Anime4K_Upscale_CNN_x2_M.glsl"
+        Rf"{GLSL_PATH}/Anime4K_Clamp_Highlights.glsl:{GLSL_PATH}/Anime4K_Upscale_Denoise_CNN_x2_VL.glsl:{GLSL_PATH}/Anime4K_AutoDownscalePre_x2.glsl:{GLSL_PATH}/Anime4K_AutoDownscalePre_x4.glsl:{GLSL_PATH}/Anime4K_Restore_CNN_M.glsl:{GLSL_PATH}/Anime4K_Upscale_CNN_x2_M.glsl"
     )
 )
 
