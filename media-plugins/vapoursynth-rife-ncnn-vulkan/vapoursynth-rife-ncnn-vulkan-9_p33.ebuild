@@ -1,0 +1,45 @@
+# Copyright 1999-2026 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+EAPI=8
+
+MY_PV=${PV%%_p*}
+PATCH=${PV#*_p}
+
+inherit meson vcs-snapshot
+
+DESCRIPTION="Real-Time Intermediate Flow Estimation for Video Frame Interpolation, based on rife-ncnn-vulkan"
+HOMEPAGE="https://github.com/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan"
+SRC_URI="https://github.com/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan/archive/r${MY_PV}_mod_v${PATCH}.tar.gz -> ${PN}-${PV}.tar.gz"
+RESTRICT="mirror"
+
+LICENSE="MIT"
+SLOT="0"
+KEYWORDS="amd64"
+IUSE=""
+
+RDEPEND+="
+	|| (
+		sys-devel/gcc[openmp]
+		sys-devel/clang-runtime[openmp]
+	)
+	dev-libs/ncnn
+	dev-util/glslang
+	dev-util/vulkan-headers
+	dev-util/vulkan-tools
+	media-libs/vapoursynth
+	media-libs/vulkan-loader
+	media-libs/zimg"
+DEPEND="${RDEPEND}
+"
+BDEPEND="app-alternatives/ninja"
+
+S=${WORKDIR}/${PF}
+
+src_configure() {
+	local emesonargs=(
+		--libdir="${EPREFIX}/usr/$(get_libdir)/vapoursynth/"
+		-Duse_system_ncnn=true
+	)
+	meson_src_configure
+}
