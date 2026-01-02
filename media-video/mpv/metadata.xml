@@ -22,7 +22,7 @@
 		<flag name="soc">Use additional <pkg>media-video/ffmpeg</pkg> patches for efficient playback on some SoCs (e.g. ARM, RISC-V)</flag>
 		<flag name="tools">Install extra tools: mpv_identify.sh, mpv_idet.sh, and umpv</flag>
 		<flag name="uchardet">Enable subtitles charset discovery via <pkg>app-i18n/uchardet</pkg></flag>
-		<flag name="vapoursynth">Enable vapoursynth scripting via<pkg>media-libs/vapoursynth</pkg></flag>
+		<flag name="vapoursynth">Enable vapoursynth scripting via <pkg>media-libs/vapoursynth</pkg></flag>
 		<flag name="zimg">Enable libzimg support (for vf_fingerprint)</flag>
 	</use>
 	<upstream>
