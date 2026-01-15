@@ -1,4 +1,4 @@
-# Copyright 1999-2025 Gentoo Foundation
+# Copyright 1999-2026 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -24,6 +24,6 @@ S=${WORKDIR}
 src_install() {
 	insinto /usr/share/${PN}
 	doins *
-	doins -r ${FILESDIR}/mpv_conf
-	newbin ${FILESDIR}/anime4k_smplayer.py anime4k_smplayer
+	insinto /etc/mpv
+	doins ${FILESDIR}/mpv_conf/*
 }
