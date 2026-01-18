@@ -13,10 +13,11 @@ SLOT="0"
 KEYWORDS="amd64"
 IUSE=""
 
-DEPEND=""
+DEPEND="
+	dev-util/patchelf
+"
 RDEPEND="
 	media-libs/vapoursynth
-	dev-util/patchelf
 	${DEPEND}
 "
 
