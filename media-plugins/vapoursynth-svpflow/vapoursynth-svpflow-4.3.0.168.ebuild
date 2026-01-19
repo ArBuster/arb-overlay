@@ -28,4 +28,6 @@ src_install() {
 	patchelf --clear-execstack libsvpflow1_vs64.so
 	newlib.so libsvpflow1_vs64.so libsvpflow1.so
 	newlib.so libsvpflow2_vs64.so libsvpflow2.so
+	insinto /etc/mpv
+	doins ${FILESDIR}/vapoursynth-svpflow.py
 }
