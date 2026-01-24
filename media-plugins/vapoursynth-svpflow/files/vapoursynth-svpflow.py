@@ -42,7 +42,7 @@ vectors= core.svp1.Analyse(super["clip"], super["data"], clip_p8, analyse_params
 smoothfps_params="""
 {
     rate: { num: 2, den: 1, abs: false },
-    algo: 2
+    algo: 13
 }
 """
 clip = core.svp2.SmoothFps(clip, super["clip"], super["data"], vectors["clip"], vectors["data"], smoothfps_params)
