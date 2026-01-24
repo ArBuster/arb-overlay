@@ -31,8 +31,11 @@ else:
 super_params="{gpu:" + GPU_Acceleration + "}"
 super  = core.svp1.Super(clip_p8, super_params)
 
-# block:{overlap:2}, 块重叠值:0-3, 数值越大速度越慢
-analyse_params="{block:{overlap:3}}"
+# block:图像块匹配算法参数, 较大的块处理速度快, 可减少伪影
+# w:16, 图像块水平大小, 可选值: 8, 16, 32
+# h:16, 图像块垂直大小, 可选值: 8, 16, 32
+# overlap:2, 块重叠值:0-3, 数值越大速度越慢, 减少块重叠可减少伪影
+analyse_params="{block:{w:32,h:32,overlap:0}}"
 vectors= core.svp1.Analyse(super["clip"], super["data"], clip_p8, analyse_params)
 
 # rate: {num: 2, den: 1, abs: false}
