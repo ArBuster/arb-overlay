@@ -31,21 +31,25 @@ else:
 super_params="{gpu:" + GPU_Acceleration + "}"
 super  = core.svp1.Super(clip_p8, super_params)
 
-# block:图像块匹配算法参数, 较大的块处理速度快, 可减少伪影
+# block:图像块匹配算法参数, 较大的块处理速度快, 可减少伪影, 但是会降低插帧流畅度
 # w:16, 图像块水平大小, 可选值: 8, 16, 32
 # h:16, 图像块垂直大小, 可选值: 8, 16, 32
-# overlap:2, 块重叠值:0-3, 数值越大速度越慢, 减少块重叠可减少伪影
-analyse_params="{block:{w:32,h:32,overlap:0}}"
+# overlap:2, 块重叠值:0-3, 数值越大速度越慢, 减少块重叠可减少伪影, 但是会降低插帧流畅度
+analyse_params="{block:{w:16,h:16,overlap:1}}"
 vectors= core.svp1.Analyse(super["clip"], super["data"], clip_p8, analyse_params)
 
 # rate: {num: 2, den: 1, abs: false}
 # num / den 定义源帧率变化倍数; abs 如果为true, num / den 定义绝对值帧率
 # algo: 13, 渲染算法, 可选值: 1, 2, 11, 13, 21, 23
 # 2 适用于2D动画; 13 伪影最少
+# scene: { mode: 3 }, 插帧模式: 
+# 0 均匀插帧, 平滑度最高; 1, 2 不均匀插帧，降低流畅度的同时可以减少瑕疵
+# 3 自适应模式, 自动在 0, 1, 2 模式中进行切换
 smoothfps_params="""
 {
     rate: { num: 2, den: 1, abs: false },
-    algo: 13
+    algo: 13,
+    scene: { mode: 0 }
 }
 """
 clip = core.svp2.SmoothFps(clip, super["clip"], super["data"], vectors["clip"], vectors["data"], smoothfps_params)
