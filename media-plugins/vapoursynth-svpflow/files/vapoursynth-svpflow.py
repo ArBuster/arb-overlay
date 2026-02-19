@@ -42,7 +42,7 @@ vectors= core.svp1.Analyse(super["clip"], super["data"], clip_p8, analyse_params
 # num / den 定义源帧率变化倍数; abs 如果为true, num / den 定义绝对值帧率
 # algo: 13, 渲染算法, 可选值: 1, 2, 11, 13, 21, 23
 # 2 适用于2D动画; 13 伪影最少
-# scene: { mode: 3 }, 插帧模式: 
+# scene: { mode: 3 }, 插帧模式:
 # 0 均匀插帧, 平滑度最高; 1, 2 不均匀插帧，降低流畅度的同时可以减少瑕疵
 # 3 自适应模式, 自动在 0, 1, 2 模式中进行切换
 smoothfps_params="""
