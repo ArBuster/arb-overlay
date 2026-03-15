@@ -6,7 +6,7 @@ EAPI=8
 inherit fcaps systemd
 
 DESCRIPTION="A platform for building proxies to bypass network restrictions."
-HOMEPAGE="https://www.v2ray.com/"
+HOMEPAGE="https://www.v2fly.org"
 SRC_URI="
 	amd64?	( https://github.com/v2fly/v2ray-core/releases/download/v${PV}/v2ray-linux-64.zip -> ${P}-linux-64.zip )
 "

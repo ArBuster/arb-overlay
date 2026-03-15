@@ -6,7 +6,7 @@ EAPI=8
 inherit fcaps systemd go-module
 
 DESCRIPTION="A platform for building proxies to bypass network restrictions."
-HOMEPAGE="https://www.v2ray.com/"
+HOMEPAGE="https://www.v2fly.org"
 SRC_URI="https://github.com/v2fly/v2ray-core/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
 RESTRICT="mirror strip"
